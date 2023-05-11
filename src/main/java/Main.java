@@ -8,6 +8,5 @@ public class Main {
 
     public static void main(String[] args) throws SQLException {
         DataBase db = DataBase.getInstance();
-        new DatabaseQueryService().findProjectPrice(db);
     }
 }
