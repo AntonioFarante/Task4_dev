@@ -29,12 +29,6 @@ public class DataBase {
 
     }
 
-//    public ResultSet executeQuery(String sql) throws SQLException {
-//
-//        Statement st = connection.createStatement();
-//        return st.executeQuery(sql);
-//
-//    }
     public ResultSet executeQuery(String sql) {
         ResultSet resultSet = null;
         try {
@@ -45,6 +39,10 @@ public class DataBase {
         }
            return resultSet; 
 
+    }
+
+    public Connection getConnection() {
+        return connection;
     }
 
 }

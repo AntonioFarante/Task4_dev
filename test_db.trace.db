@@ -1,0 +1,2069 @@
+2023-05-06 09:53:32 database: flush
+org.h2.message.DbException: Внутренняя ошибка: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/HP/IdeaProjects/JDBC_TEST/test_db.mv.db [2.1.214/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/HP/IdeaProjects/JDBC_TEST/test_db.mv.db [2.1.214/7]" [50000-214]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.DbException.convert(DbException.java:395)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:125)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:3318)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:593)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:469)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:4082)
+	at org.h2.mvstore.db.Store.<init>(Store.java:136)
+	at org.h2.engine.Database.<init>(Database.java:324)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:252)
+	at DataBase.DataBase.<init>(DataBase.java:15)
+	at DataBase.DataBase.<clinit>(DataBase.java:9)
+	at Main.main(Main.java:11)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: Внутренняя ошибка: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/HP/IdeaProjects/JDBC_TEST/test_db.mv.db [2.1.214/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/HP/IdeaProjects/JDBC_TEST/test_db.mv.db [2.1.214/7]" [50000-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:554)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	... 20 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/HP/IdeaProjects/JDBC_TEST/test_db.mv.db [2.1.214/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:1004)
+	at org.h2.mvstore.FileStore.open(FileStore.java:178)
+	at org.h2.mvstore.FileStore.open(FileStore.java:128)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:452)
+	... 14 more
+2023-05-06 17:35:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "[*]insert_into_table.sql"; ожидалось "INSERT"
+Syntax error in SQL statement "[*]insert_into_table.sql"; expected "INSERT"; SQL statement:
+insert_into_table.sql [42001-214]
+2023-05-06 19:23:01 database: flush
+org.h2.message.DbException: Внутренняя ошибка: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/HP/IdeaProjects/JDBC_TEST/test_db.mv.db [2.1.214/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/HP/IdeaProjects/JDBC_TEST/test_db.mv.db [2.1.214/7]" [50000-214]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.DbException.convert(DbException.java:395)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:125)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:3318)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:593)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:469)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:4082)
+	at org.h2.mvstore.db.Store.<init>(Store.java:136)
+	at org.h2.engine.Database.<init>(Database.java:324)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:252)
+	at DataBase.DataBase.<init>(DataBase.java:12)
+	at DataBase.DataBase.<clinit>(DataBase.java:6)
+	at Main.main(Main.java:10)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: Внутренняя ошибка: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/HP/IdeaProjects/JDBC_TEST/test_db.mv.db [2.1.214/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/HP/IdeaProjects/JDBC_TEST/test_db.mv.db [2.1.214/7]" [50000-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:554)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	... 20 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/HP/IdeaProjects/JDBC_TEST/test_db.mv.db [2.1.214/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:1004)
+	at org.h2.mvstore.FileStore.open(FileStore.java:178)
+	at org.h2.mvstore.FileStore.open(FileStore.java:128)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:452)
+	... 14 more
+2023-05-06 19:23:18 database: flush
+org.h2.message.DbException: Внутренняя ошибка: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/HP/IdeaProjects/JDBC_TEST/test_db.mv.db [2.1.214/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/HP/IdeaProjects/JDBC_TEST/test_db.mv.db [2.1.214/7]" [50000-214]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.DbException.convert(DbException.java:395)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:125)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:3318)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:593)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:469)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:4082)
+	at org.h2.mvstore.db.Store.<init>(Store.java:136)
+	at org.h2.engine.Database.<init>(Database.java:324)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:252)
+	at DataBase.DataBase.<init>(DataBase.java:12)
+	at DataBase.DataBase.<clinit>(DataBase.java:6)
+	at Main.main(Main.java:10)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: Внутренняя ошибка: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/HP/IdeaProjects/JDBC_TEST/test_db.mv.db [2.1.214/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/HP/IdeaProjects/JDBC_TEST/test_db.mv.db [2.1.214/7]" [50000-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:554)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	... 20 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/HP/IdeaProjects/JDBC_TEST/test_db.mv.db [2.1.214/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:1004)
+	at org.h2.mvstore.FileStore.open(FileStore.java:178)
+	at org.h2.mvstore.FileStore.open(FileStore.java:128)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:452)
+	... 14 more
+2023-05-06 19:28:00 database: flush
+org.h2.message.DbException: Внутренняя ошибка: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/HP/IdeaProjects/JDBC_TEST/test_db.mv.db [2.1.214/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/HP/IdeaProjects/JDBC_TEST/test_db.mv.db [2.1.214/7]" [50000-214]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.DbException.convert(DbException.java:395)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:125)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:3318)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:593)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:469)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:4082)
+	at org.h2.mvstore.db.Store.<init>(Store.java:136)
+	at org.h2.engine.Database.<init>(Database.java:324)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:252)
+	at Main.main(Main.java:15)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: Внутренняя ошибка: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/HP/IdeaProjects/JDBC_TEST/test_db.mv.db [2.1.214/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/HP/IdeaProjects/JDBC_TEST/test_db.mv.db [2.1.214/7]" [50000-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:554)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	... 18 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/HP/IdeaProjects/JDBC_TEST/test_db.mv.db [2.1.214/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:1004)
+	at org.h2.mvstore.FileStore.open(FileStore.java:178)
+	at org.h2.mvstore.FileStore.open(FileStore.java:128)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:452)
+	... 12 more
+2023-05-06 19:28:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "DROP [*]* FROM worker"; ожидалось "TABLE, INDEX, USER, SEQUENCE, CONSTANT, TRIGGER, VIEW, ROLE, ALIAS, SCHEMA, ALL OBJECTS, DOMAIN, TYPE, DATATYPE, AGGREGATE, SYNONYM"
+Syntax error in SQL statement "DROP [*]* FROM worker"; expected "TABLE, INDEX, USER, SEQUENCE, CONSTANT, TRIGGER, VIEW, ROLE, ALIAS, SCHEMA, ALL OBJECTS, DOMAIN, TYPE, DATATYPE, AGGREGATE, SYNONYM"; SQL statement:
+DROP * FROM worker [42001-214]
+2023-05-06 19:29:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "DROP [*]FROM worker"; ожидалось "TABLE, INDEX, USER, SEQUENCE, CONSTANT, TRIGGER, VIEW, ROLE, ALIAS, SCHEMA, ALL OBJECTS, DOMAIN, TYPE, DATATYPE, AGGREGATE, SYNONYM"
+Syntax error in SQL statement "DROP [*]FROM worker"; expected "TABLE, INDEX, USER, SEQUENCE, CONSTANT, TRIGGER, VIEW, ROLE, ALIAS, SCHEMA, ALL OBJECTS, DOMAIN, TYPE, DATATYPE, AGGREGATE, SYNONYM"; SQL statement:
+DROP FROM worker [42001-214]
+2023-05-06 19:30:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "DROP [*]FROM worker"; ожидалось "TABLE, INDEX, USER, SEQUENCE, CONSTANT, TRIGGER, VIEW, ROLE, ALIAS, SCHEMA, ALL OBJECTS, DOMAIN, TYPE, DATATYPE, AGGREGATE, SYNONYM"
+Syntax error in SQL statement "DROP [*]FROM worker"; expected "TABLE, INDEX, USER, SEQUENCE, CONSTANT, TRIGGER, VIEW, ROLE, ALIAS, SCHEMA, ALL OBJECTS, DOMAIN, TYPE, DATATYPE, AGGREGATE, SYNONYM"; SQL statement:
+DROP FROM worker [42001-214]
+2023-05-06 19:31:23 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "DROP [*]FROM worker"; ожидалось "TABLE, INDEX, USER, SEQUENCE, CONSTANT, TRIGGER, VIEW, ROLE, ALIAS, SCHEMA, ALL OBJECTS, DOMAIN, TYPE, DATATYPE, AGGREGATE, SYNONYM"
+Syntax error in SQL statement "DROP [*]FROM worker"; expected "TABLE, INDEX, USER, SEQUENCE, CONSTANT, TRIGGER, VIEW, ROLE, ALIAS, SCHEMA, ALL OBJECTS, DOMAIN, TYPE, DATATYPE, AGGREGATE, SYNONYM"; SQL statement:
+DROP FROM worker [42001-214]
+2023-05-06 19:32:55 database: flush
+org.h2.message.DbException: Внутренняя ошибка: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/HP/IdeaProjects/JDBC_TEST/test_db.mv.db [2.1.214/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/HP/IdeaProjects/JDBC_TEST/test_db.mv.db [2.1.214/7]" [50000-214]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.DbException.convert(DbException.java:395)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:125)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:3318)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:593)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:469)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:4082)
+	at org.h2.mvstore.db.Store.<init>(Store.java:136)
+	at org.h2.engine.Database.<init>(Database.java:324)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122)
+	at org.h2.util.JdbcUtils.getConnection(JdbcUtils.java:288)
+	at org.h2.server.web.WebServer.getConnection(WebServer.java:808)
+	at org.h2.server.web.WebApp.login(WebApp.java:1033)
+	at org.h2.server.web.WebApp.process(WebApp.java:226)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:176)
+	at org.h2.server.web.WebThread.process(WebThread.java:152)
+	at org.h2.server.web.WebThread.run(WebThread.java:101)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: Внутренняя ошибка: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/HP/IdeaProjects/JDBC_TEST/test_db.mv.db [2.1.214/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/HP/IdeaProjects/JDBC_TEST/test_db.mv.db [2.1.214/7]" [50000-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:554)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	... 22 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/HP/IdeaProjects/JDBC_TEST/test_db.mv.db [2.1.214/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:1004)
+	at org.h2.mvstore.FileStore.open(FileStore.java:178)
+	at org.h2.mvstore.FileStore.open(FileStore.java:128)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:452)
+	... 16 more
+2023-05-06 19:33:16 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "DROP [*]FROM worker"; ожидалось "TABLE, INDEX, USER, SEQUENCE, CONSTANT, TRIGGER, VIEW, ROLE, ALIAS, SCHEMA, ALL OBJECTS, DOMAIN, TYPE, DATATYPE, AGGREGATE, SYNONYM"
+Syntax error in SQL statement "DROP [*]FROM worker"; expected "TABLE, INDEX, USER, SEQUENCE, CONSTANT, TRIGGER, VIEW, ROLE, ALIAS, SCHEMA, ALL OBJECTS, DOMAIN, TYPE, DATATYPE, AGGREGATE, SYNONYM"; SQL statement:
+DROP FROM worker [42001-214]
+2023-05-06 19:36:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "PROJECT" не найдена
+Table "PROJECT" not found; SQL statement:
+CREATE TABLE project_worker (
+	project_id BIGINT,
+	worker_id BIGINT, 
+	FOREIGN KEY (project_id)
+	REFERENCES project(id),
+	FOREIGN KEY (worker_id)
+	REFERENCES worker(id)
+	
+) [42102-214]
+2023-05-06 19:36:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "WORKER_ID" не найдена
+Table "WORKER_ID" not found; SQL statement:
+ALTER TABLE worker_id
+ADD CONSTRAINT level_enum_values
+CHECK (`level` IN ('Trainee','Junior','Middle','Senior')) [42102-214]
+2023-05-06 19:37:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "WORKER" уже существует
+Table "WORKER" already exists; SQL statement:
+CREATE TABLE worker (
+	id IDENTITY PRIMARY KEY,
+	name VARCHAR(100) NOT NULL,
+	birthday DATE,
+	`level` VARCHAR(100) NOT NULL,
+	salary INTEGER
+) [42101-214]
+2023-05-06 19:37:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "WORKER_ID" не найдена
+Table "WORKER_ID" not found; SQL statement:
+ALTER TABLE worker_id
+ADD CONSTRAINT level_enum_values
+CHECK (`level` IN ('Trainee','Junior','Middle','Senior')) [42102-214]
+2023-05-06 19:37:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "CLIENT" уже существует
+Table "CLIENT" already exists; SQL statement:
+CREATE TABLE client (
+	id IDENTITY PRIMARY KEY,
+	name VARCHAR(100) NOT NULL
+) [42101-214]
+2023-05-06 19:37:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "PROJECT" уже существует
+Table "PROJECT" already exists; SQL statement:
+CREATE TABLE project(
+	id IDENTITY PRIMARY KEY,
+	client_id BIGINT,
+	start_date DATE,
+	finish_date DATE
+) [42101-214]
+2023-05-06 19:37:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "PROJECT_WORKER" уже существует
+Table "PROJECT_WORKER" already exists; SQL statement:
+CREATE TABLE project_worker (
+	project_id BIGINT,
+	worker_id BIGINT, 
+	FOREIGN KEY (project_id)
+	REFERENCES project(id),
+	FOREIGN KEY (worker_id)
+	REFERENCES worker(id)
+	
+) [42101-214]
+2023-05-06 19:38:05 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Невозможно удалить "PROJECT", пока существует зависимый объект "CONSTRAINT_5"
+Cannot drop "PROJECT" because "CONSTRAINT_5" depends on it; SQL statement:
+Drop table project [90107-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:632)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.command.ddl.DropTable.prepareDrop(DropTable.java:97)
+	at org.h2.command.ddl.DropTable.update(DropTable.java:121)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:169)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:252)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:223)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1339)
+	at org.h2.server.web.WebApp.query(WebApp.java:1137)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1103)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1090)
+	at org.h2.server.web.WebThread.process(WebThread.java:188)
+	at org.h2.server.web.WebThread.run(WebThread.java:101)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2023-05-06 19:38:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Невозможно удалить "WORKER", пока существует зависимый объект "CONSTRAINT_5B"
+Cannot drop "WORKER" because "CONSTRAINT_5B" depends on it; SQL statement:
+Drop table worker [90107-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:632)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.command.ddl.DropTable.prepareDrop(DropTable.java:97)
+	at org.h2.command.ddl.DropTable.update(DropTable.java:121)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:169)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:252)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:223)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1339)
+	at org.h2.server.web.WebApp.query(WebApp.java:1137)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1103)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1090)
+	at org.h2.server.web.WebThread.process(WebThread.java:188)
+	at org.h2.server.web.WebThread.run(WebThread.java:101)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2023-05-06 19:38:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "WORKER_ID" не найдена
+Table "WORKER_ID" not found; SQL statement:
+ALTER TABLE worker_id
+ADD CONSTRAINT level_enum_values
+CHECK (`level` IN ('Trainee','Junior','Middle','Senior')) [42102-214]
+2023-05-06 19:39:09 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "WORKER" уже существует
+Table "WORKER" already exists; SQL statement:
+CREATE TABLE worker (
+	id IDENTITY PRIMARY KEY,
+	name VARCHAR(100) NOT NULL,
+	birthday DATE,
+	`level` VARCHAR(100) NOT NULL,
+	salary INTEGER
+) [42101-214]
+2023-05-06 19:39:09 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "CLIENT" уже существует
+Table "CLIENT" already exists; SQL statement:
+CREATE TABLE client (
+	id IDENTITY PRIMARY KEY,
+	name VARCHAR(100) NOT NULL
+) [42101-214]
+2023-05-06 19:39:09 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "PROJECT" уже существует
+Table "PROJECT" already exists; SQL statement:
+CREATE TABLE project(
+	id IDENTITY PRIMARY KEY,
+	client_id BIGINT,
+	start_date DATE,
+	finish_date DATE
+) [42101-214]
+2023-05-06 19:39:09 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "PROJECT_WORKER" уже существует
+Table "PROJECT_WORKER" already exists; SQL statement:
+CREATE TABLE project_worker (
+	project_id BIGINT,
+	worker_id BIGINT, 
+	FOREIGN KEY (project_id)
+	REFERENCES project(id),
+	FOREIGN KEY (worker_id)
+	REFERENCES worker(id)
+	
+) [42101-214]
+2023-05-06 19:39:12 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Ограничение "LEVEL_ENUM_VALUES" уже существует
+Constraint "LEVEL_ENUM_VALUES" already exists; SQL statement:
+ALTER TABLE worker
+ADD CONSTRAINT level_enum_values
+CHECK (`level` IN ('Trainee','Junior','Middle','Senior')) [90045-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:632)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.command.ddl.AlterTableAddConstraint.tryUpdate(AlterTableAddConstraint.java:109)
+	at org.h2.command.ddl.AlterTableAddConstraint.update(AlterTableAddConstraint.java:72)
+	at org.h2.command.ddl.AlterTable.update(AlterTable.java:46)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:169)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:252)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:223)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1339)
+	at org.h2.server.web.WebApp.query(WebApp.java:1137)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1103)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1090)
+	at org.h2.server.web.WebThread.process(WebThread.java:188)
+	at org.h2.server.web.WebThread.run(WebThread.java:101)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2023-05-06 19:39:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "PROJECTR" не найдена
+Table "PROJECTR" not found; SQL statement:
+drop table projectr [42102-214]
+2023-05-06 20:09:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "NAME" не найдена
+Table "NAME" not found; SQL statement:
+delete name from woker where id > 10 [42102-214]
+2023-05-06 20:10:48 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "delete from [*]table worker where id > 10"; ожидалось "identifier"
+Syntax error in SQL statement "delete from [*]table worker where id > 10"; expected "identifier"; SQL statement:
+delete from table worker where id > 10 [42001-214]
+2023-05-06 20:21:52 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "INSERT INTO project_worker (project_id, worker_id) VALUES\000d\000a\0009(11, 1),(11,2),(11,3),\000d\000a\0009(12, 4),(12,5),(12,6)\000d\000a\0009[*](13, 7),(11,8),(11,9),(13,10),(13,1),\000d\000a\0009(14, 2),(14,3),\000d\000a\0009(15, 4),(15,5),(15,6),(15,7),\000d\000a\0009(16, 8),(16,9),(16,10),(16,1),\000d\000a\0009(17, 2),(17,3),(17,4),(17,5),(17,6),\000d\000a\0009(18, 7),(18,8),\000d\000a\0009(19, 9),(19,10),(19,1),\000d\000a\0009(20, 4),(20,3),(20,2),(20,5)(20,6)"
+Syntax error in SQL statement "INSERT INTO project_worker (project_id, worker_id) VALUES\000d\000a\0009(11, 1),(11,2),(11,3),\000d\000a\0009(12, 4),(12,5),(12,6)\000d\000a\0009[*](13, 7),(11,8),(11,9),(13,10),(13,1),\000d\000a\0009(14, 2),(14,3),\000d\000a\0009(15, 4),(15,5),(15,6),(15,7),\000d\000a\0009(16, 8),(16,9),(16,10),(16,1),\000d\000a\0009(17, 2),(17,3),(17,4),(17,5),(17,6),\000d\000a\0009(18, 7),(18,8),\000d\000a\0009(19, 9),(19,10),(19,1),\000d\000a\0009(20, 4),(20,3),(20,2),(20,5)(20,6)"; SQL statement:
+INSERT INTO project_worker (project_id, worker_id) VALUES
+	(11, 1),(11,2),(11,3),
+	(12, 4),(12,5),(12,6)
+	(13, 7),(11,8),(11,9),(13,10),(13,1),
+	(14, 2),(14,3),
+	(15, 4),(15,5),(15,6),(15,7),
+	(16, 8),(16,9),(16,10),(16,1),
+	(17, 2),(17,3),(17,4),(17,5),(17,6),
+	(18, 7),(18,8),
+	(19, 9),(19,10),(19,1),
+	(20, 4),(20,3),(20,2),(20,5)(20,6) [42000-214]
+2023-05-06 20:22:08 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "INSERT INTO project_worker (project_id, worker_id) VALUES\000d\000a\0009(11, 1),(11,2),(11,3),\000d\000a\0009(12, 4),(12,5),(12,6),\000d\000a\0009(13, 7),(11,8),(11,9),(13,10),(13,1),\000d\000a\0009(14, 2),(14,3),\000d\000a\0009(15, 4),(15,5),(15,6),(15,7),\000d\000a\0009(16, 8),(16,9),(16,10),(16,1),\000d\000a\0009(17, 2),(17,3),(17,4),(17,5),(17,6),\000d\000a\0009(18, 7),(18,8),\000d\000a\0009(19, 9),(19,10),(19,1),\000d\000a\0009(20, 4),(20,3),(20,2),(20,5)[*](20,6)"
+Syntax error in SQL statement "INSERT INTO project_worker (project_id, worker_id) VALUES\000d\000a\0009(11, 1),(11,2),(11,3),\000d\000a\0009(12, 4),(12,5),(12,6),\000d\000a\0009(13, 7),(11,8),(11,9),(13,10),(13,1),\000d\000a\0009(14, 2),(14,3),\000d\000a\0009(15, 4),(15,5),(15,6),(15,7),\000d\000a\0009(16, 8),(16,9),(16,10),(16,1),\000d\000a\0009(17, 2),(17,3),(17,4),(17,5),(17,6),\000d\000a\0009(18, 7),(18,8),\000d\000a\0009(19, 9),(19,10),(19,1),\000d\000a\0009(20, 4),(20,3),(20,2),(20,5)[*](20,6)"; SQL statement:
+INSERT INTO project_worker (project_id, worker_id) VALUES
+	(11, 1),(11,2),(11,3),
+	(12, 4),(12,5),(12,6),
+	(13, 7),(11,8),(11,9),(13,10),(13,1),
+	(14, 2),(14,3),
+	(15, 4),(15,5),(15,6),(15,7),
+	(16, 8),(16,9),(16,10),(16,1),
+	(17, 2),(17,3),(17,4),(17,5),(17,6),
+	(18, 7),(18,8),
+	(19, 9),(19,10),(19,1),
+	(20, 4),(20,3),(20,2),(20,5)(20,6) [42000-214]
+2023-05-06 20:24:10 database: flush
+org.h2.message.DbException: Внутренняя ошибка: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/HP/IdeaProjects/JDBC_TEST/test_db.mv.db [2.1.214/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/HP/IdeaProjects/JDBC_TEST/test_db.mv.db [2.1.214/7]" [50000-214]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.DbException.convert(DbException.java:395)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:125)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:3318)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:593)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:469)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:4082)
+	at org.h2.mvstore.db.Store.<init>(Store.java:136)
+	at org.h2.engine.Database.<init>(Database.java:324)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:252)
+	at DataBase.DataBase.<init>(DataBase.java:12)
+	at DataBase.DataBase.<clinit>(DataBase.java:6)
+	at Main.main(Main.java:18)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: Внутренняя ошибка: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/HP/IdeaProjects/JDBC_TEST/test_db.mv.db [2.1.214/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/HP/IdeaProjects/JDBC_TEST/test_db.mv.db [2.1.214/7]" [50000-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:554)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	... 20 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/HP/IdeaProjects/JDBC_TEST/test_db.mv.db [2.1.214/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:1004)
+	at org.h2.mvstore.FileStore.open(FileStore.java:178)
+	at org.h2.mvstore.FileStore.open(FileStore.java:128)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:452)
+	... 14 more
+2023-05-06 20:25:07 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "PROJEECT_WORKER" не найдена
+Table "PROJEECT_WORKER" not found; SQL statement:
+select * from projeect_worker [42102-214]
+2023-05-06 20:26:24 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: Объект уже закрыт
+The object is already closed [90007-214]
+2023-05-06 20:43:40 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: Объект уже закрыт
+The object is already closed [90007-214]
+2023-05-06 20:45:17 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: Объект уже закрыт
+The object is already closed [90007-214]
+2023-05-06 20:49:43 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: Объект уже закрыт
+The object is already closed [90007-214]
+2023-05-06 20:51:26 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: Объект уже закрыт
+The object is already closed [90007-214]
+2023-05-06 20:51:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: Объект уже закрыт
+The object is already closed [90007-214]
+2023-05-07 13:16:04 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Функция "TYPE" не найдена
+Function "TYPE" not found; SQL statement:
+SELECT type(youngest), name, birthday FROM worker ORDER BY birthday LIMIT 1 [90022-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:632)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.command.Parser.readFunction(Parser.java:3847)
+	at org.h2.command.Parser.readTermWithIdentifier(Parser.java:5211)
+	at org.h2.command.Parser.readTerm(Parser.java:4901)
+	at org.h2.command.Parser.readFactor(Parser.java:3398)
+	at org.h2.command.Parser.readSum(Parser.java:3385)
+	at org.h2.command.Parser.readConcat(Parser.java:3350)
+	at org.h2.command.Parser.readCondition(Parser.java:3132)
+	at org.h2.command.Parser.readExpression(Parser.java:3053)
+	at org.h2.command.Parser.parseSelectExpressions(Parser.java:2853)
+	at org.h2.command.Parser.parseSelect(Parser.java:2871)
+	at org.h2.command.Parser.parseQueryPrimary(Parser.java:2762)
+	at org.h2.command.Parser.parseQueryTerm(Parser.java:2633)
+	at org.h2.command.Parser.parseQueryExpressionBody(Parser.java:2612)
+	at org.h2.command.Parser.parseQueryExpressionBodyAndEndOfQuery(Parser.java:2605)
+	at org.h2.command.Parser.parseQueryExpression(Parser.java:2598)
+	at org.h2.command.Parser.parseQuery(Parser.java:2567)
+	at org.h2.command.Parser.parsePrepared(Parser.java:724)
+	at org.h2.command.Parser.parse(Parser.java:689)
+	at org.h2.command.Parser.parse(Parser.java:661)
+	at org.h2.command.Parser.prepareCommand(Parser.java:569)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:237)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:223)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1339)
+	at org.h2.server.web.WebApp.query(WebApp.java:1137)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1103)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1090)
+	at org.h2.server.web.WebThread.process(WebThread.java:188)
+	at org.h2.server.web.WebThread.run(WebThread.java:101)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2023-05-07 13:32:09 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "[*]SELET count(*) FROM worker WHERE salary > 2000"; ожидалось "SAVEPOINT, SCRIPT, SHUTDOWN, SHOW"
+Syntax error in SQL statement "[*]SELET count(*) FROM worker WHERE salary > 2000"; expected "SAVEPOINT, SCRIPT, SHUTDOWN, SHOW"; SQL statement:
+SELET count(*) FROM worker WHERE salary > 2000 [42001-214]
+2023-05-07 13:52:44 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Столбец "CLIENT_ID" не найден
+Column "CLIENT_ID" not found; SQL statement:
+UPDATE client SET client_id = 6 WHERE id = 11 [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.getColumn(Table.java:749)
+	at org.h2.command.Parser.readTableColumn(Parser.java:1084)
+	at org.h2.command.Parser.readUpdateSetClause(Parser.java:1151)
+	at org.h2.command.Parser.parseUpdate(Parser.java:1120)
+	at org.h2.command.Parser.parsePrepared(Parser.java:858)
+	at org.h2.command.Parser.parse(Parser.java:689)
+	at org.h2.command.Parser.parse(Parser.java:661)
+	at org.h2.command.Parser.prepareCommand(Parser.java:569)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:237)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:223)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1339)
+	at org.h2.server.web.WebApp.query(WebApp.java:1137)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1103)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1090)
+	at org.h2.server.web.WebThread.process(WebThread.java:188)
+	at org.h2.server.web.WebThread.run(WebThread.java:101)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2023-05-07 15:04:22 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Неоднозначное имя столбца "ID"
+Ambiguous column name "ID"; SQL statement:
+SELECT *
+FROM client
+JOIN project ON id = project.client_id [90059-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:632)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.expression.ExpressionColumn.mapColumn(ExpressionColumn.java:197)
+	at org.h2.expression.ExpressionColumn.mapColumns(ExpressionColumn.java:175)
+	at org.h2.expression.condition.Comparison.mapColumns(Comparison.java:474)
+	at org.h2.table.TableFilter$MapColumnsVisitor.accept(TableFilter.java:1246)
+	at org.h2.table.TableFilter.visit(TableFilter.java:1189)
+	at org.h2.table.TableFilter.addJoin(TableFilter.java:589)
+	at org.h2.command.Parser.addJoin(Parser.java:2460)
+	at org.h2.command.Parser.readTableReference(Parser.java:2371)
+	at org.h2.command.Parser.parseSelectFromPart(Parser.java:2772)
+	at org.h2.command.Parser.parseSelect(Parser.java:2878)
+	at org.h2.command.Parser.parseQueryPrimary(Parser.java:2762)
+	at org.h2.command.Parser.parseQueryTerm(Parser.java:2633)
+	at org.h2.command.Parser.parseQueryExpressionBody(Parser.java:2612)
+	at org.h2.command.Parser.parseQueryExpressionBodyAndEndOfQuery(Parser.java:2605)
+	at org.h2.command.Parser.parseQueryExpression(Parser.java:2598)
+	at org.h2.command.Parser.parseQuery(Parser.java:2567)
+	at org.h2.command.Parser.parsePrepared(Parser.java:724)
+	at org.h2.command.Parser.parse(Parser.java:689)
+	at org.h2.command.Parser.parse(Parser.java:661)
+	at org.h2.command.Parser.prepareCommand(Parser.java:569)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:237)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:223)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1339)
+	at org.h2.server.web.WebApp.query(WebApp.java:1137)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1103)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1090)
+	at org.h2.server.web.WebThread.process(WebThread.java:188)
+	at org.h2.server.web.WebThread.run(WebThread.java:101)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2023-05-07 15:07:17 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Неоднозначное имя столбца "ID"
+Ambiguous column name "ID"; SQL statement:
+SELECT *
+FROM client
+JOIN project ON id = PROJECT.CLIENT_ID [90059-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:632)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.expression.ExpressionColumn.mapColumn(ExpressionColumn.java:197)
+	at org.h2.expression.ExpressionColumn.mapColumns(ExpressionColumn.java:175)
+	at org.h2.expression.condition.Comparison.mapColumns(Comparison.java:474)
+	at org.h2.table.TableFilter$MapColumnsVisitor.accept(TableFilter.java:1246)
+	at org.h2.table.TableFilter.visit(TableFilter.java:1189)
+	at org.h2.table.TableFilter.addJoin(TableFilter.java:589)
+	at org.h2.command.Parser.addJoin(Parser.java:2460)
+	at org.h2.command.Parser.readTableReference(Parser.java:2371)
+	at org.h2.command.Parser.parseSelectFromPart(Parser.java:2772)
+	at org.h2.command.Parser.parseSelect(Parser.java:2878)
+	at org.h2.command.Parser.parseQueryPrimary(Parser.java:2762)
+	at org.h2.command.Parser.parseQueryTerm(Parser.java:2633)
+	at org.h2.command.Parser.parseQueryExpressionBody(Parser.java:2612)
+	at org.h2.command.Parser.parseQueryExpressionBodyAndEndOfQuery(Parser.java:2605)
+	at org.h2.command.Parser.parseQueryExpression(Parser.java:2598)
+	at org.h2.command.Parser.parseQuery(Parser.java:2567)
+	at org.h2.command.Parser.parsePrepared(Parser.java:724)
+	at org.h2.command.Parser.parse(Parser.java:689)
+	at org.h2.command.Parser.parse(Parser.java:661)
+	at org.h2.command.Parser.prepareCommand(Parser.java:569)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:237)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:223)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1339)
+	at org.h2.server.web.WebApp.query(WebApp.java:1137)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1103)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1090)
+	at org.h2.server.web.WebThread.process(WebThread.java:188)
+	at org.h2.server.web.WebThread.run(WebThread.java:101)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2023-05-07 15:08:23 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Столбец "PROJECT_WOKER.PROJECT_ID" не найден
+Column "PROJECT_WOKER.PROJECT_ID" not found; SQL statement:
+SELECT *
+FROM project
+JOIN project_worker ON id = project_woker.project_id [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:244)
+	at org.h2.expression.ExpressionColumn.optimizeOther(ExpressionColumn.java:226)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:213)
+	at org.h2.expression.condition.Comparison.optimize(Comparison.java:140)
+	at org.h2.expression.Expression.optimizeCondition(Expression.java:148)
+	at org.h2.command.query.Select.prepareExpressions(Select.java:1177)
+	at org.h2.command.query.Query.prepare(Query.java:218)
+	at org.h2.command.Parser.prepareCommand(Parser.java:575)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:237)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:223)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1339)
+	at org.h2.server.web.WebApp.query(WebApp.java:1137)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1103)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1090)
+	at org.h2.server.web.WebThread.process(WebThread.java:188)
+	at org.h2.server.web.WebThread.run(WebThread.java:101)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2023-05-07 15:14:19 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Столбец "PUBLIC.PROJECT.ID" должен быть в предложении GROUP BY
+Column "PUBLIC.PROJECT.ID" must be in the GROUP BY list; SQL statement:
+SELECT * FROM project 
+GROUP BY client_id [90016-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:632)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.expression.ExpressionColumn.updateAggregate(ExpressionColumn.java:266)
+	at org.h2.command.query.Select.updateAgg(Select.java:539)
+	at org.h2.command.query.Select.gatherGroup(Select.java:522)
+	at org.h2.command.query.Select.queryGroup(Select.java:488)
+	at org.h2.command.query.Select.queryWithoutCache(Select.java:828)
+	at org.h2.command.query.Query.queryWithoutCacheLazyCheck(Query.java:197)
+	at org.h2.command.query.Query.query(Query.java:512)
+	at org.h2.command.query.Query.query(Query.java:475)
+	at org.h2.command.CommandContainer.query(CommandContainer.java:251)
+	at org.h2.command.Command.executeQuery(Command.java:190)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:247)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:223)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1339)
+	at org.h2.server.web.WebApp.query(WebApp.java:1137)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1103)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1090)
+	at org.h2.server.web.WebThread.process(WebThread.java:188)
+	at org.h2.server.web.WebThread.run(WebThread.java:101)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2023-05-07 15:14:32 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Столбец "PUBLIC.PROJECT.ID" должен быть в предложении GROUP BY
+Column "PUBLIC.PROJECT.ID" must be in the GROUP BY list; SQL statement:
+SELECT * FROM project 
+GROUP BY client_id [90016-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:632)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.expression.ExpressionColumn.updateAggregate(ExpressionColumn.java:266)
+	at org.h2.command.query.Select.updateAgg(Select.java:539)
+	at org.h2.command.query.Select.gatherGroup(Select.java:522)
+	at org.h2.command.query.Select.queryGroup(Select.java:488)
+	at org.h2.command.query.Select.queryWithoutCache(Select.java:828)
+	at org.h2.command.query.Query.queryWithoutCacheLazyCheck(Query.java:197)
+	at org.h2.command.query.Query.query(Query.java:512)
+	at org.h2.command.query.Query.query(Query.java:475)
+	at org.h2.command.CommandContainer.query(CommandContainer.java:251)
+	at org.h2.command.Command.executeQuery(Command.java:190)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:247)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:223)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1339)
+	at org.h2.server.web.WebApp.query(WebApp.java:1137)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1103)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1090)
+	at org.h2.server.web.WebThread.process(WebThread.java:188)
+	at org.h2.server.web.WebThread.run(WebThread.java:101)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2023-05-07 15:20:55 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Столбец "CLIEN_ID" не найден
+Column "CLIEN_ID" not found; SQL statement:
+SELECT clien_id, count(id)
+FROM project
+GROUP BY client_id [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:244)
+	at org.h2.expression.ExpressionColumn.optimizeOther(ExpressionColumn.java:226)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:213)
+	at org.h2.command.query.Select.prepareExpressions(Select.java:1170)
+	at org.h2.command.query.Query.prepare(Query.java:218)
+	at org.h2.command.Parser.prepareCommand(Parser.java:575)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:237)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:223)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1339)
+	at org.h2.server.web.WebApp.query(WebApp.java:1137)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1103)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1090)
+	at org.h2.server.web.WebThread.process(WebThread.java:188)
+	at org.h2.server.web.WebThread.run(WebThread.java:101)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2023-05-07 15:40:54 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Функция "PROJECT_COUNT" не найдена
+Function "PROJECT_COUNT" not found; SQL statement:
+SELECT client_id, project_count(id)
+FROM project
+GROUP BY client_id
+HAVING project_count(id) = 3 [90022-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:632)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.command.Parser.readFunction(Parser.java:3847)
+	at org.h2.command.Parser.readTermWithIdentifier(Parser.java:5211)
+	at org.h2.command.Parser.readTerm(Parser.java:4901)
+	at org.h2.command.Parser.readFactor(Parser.java:3398)
+	at org.h2.command.Parser.readSum(Parser.java:3385)
+	at org.h2.command.Parser.readConcat(Parser.java:3350)
+	at org.h2.command.Parser.readCondition(Parser.java:3132)
+	at org.h2.command.Parser.readExpression(Parser.java:3053)
+	at org.h2.command.Parser.parseSelectExpressions(Parser.java:2853)
+	at org.h2.command.Parser.parseSelect(Parser.java:2871)
+	at org.h2.command.Parser.parseQueryPrimary(Parser.java:2762)
+	at org.h2.command.Parser.parseQueryTerm(Parser.java:2633)
+	at org.h2.command.Parser.parseQueryExpressionBody(Parser.java:2612)
+	at org.h2.command.Parser.parseQueryExpressionBodyAndEndOfQuery(Parser.java:2605)
+	at org.h2.command.Parser.parseQueryExpression(Parser.java:2598)
+	at org.h2.command.Parser.parseQuery(Parser.java:2567)
+	at org.h2.command.Parser.parsePrepared(Parser.java:724)
+	at org.h2.command.Parser.parse(Parser.java:689)
+	at org.h2.command.Parser.parse(Parser.java:661)
+	at org.h2.command.Parser.prepareCommand(Parser.java:569)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:237)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:223)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1339)
+	at org.h2.server.web.WebApp.query(WebApp.java:1137)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1103)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1090)
+	at org.h2.server.web.WebThread.process(WebThread.java:188)
+	at org.h2.server.web.WebThread.run(WebThread.java:101)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2023-05-07 15:43:22 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "SELECT *\000d\000aFROM client\000d\000aWHERE id IN (\000d\000aSELECT client_id, count(id)\000d\000aFROM project\000d\000aGROUP BY client_id\000d\000aHAVING count(id) IN (\000d\000aSELECT count(id)\000d\000aFROM project\000d\000aGROUP BY client_id\000d\000aORDER BY count(id) DESC\000d\000aLIMIT 1\000d\000a)[*]"; ожидалось "NOT, IS, ILIKE, REGEXP, AND, _LOCAL_AND_GLOBAL_, OR, WINDOW, QUALIFY, INTERSECT, UNION, EXCEPT, MINUS, ORDER BY, OFFSET, FETCH, LIMIT, FOR, ,, )"
+Syntax error in SQL statement "SELECT *\000d\000aFROM client\000d\000aWHERE id IN (\000d\000aSELECT client_id, count(id)\000d\000aFROM project\000d\000aGROUP BY client_id\000d\000aHAVING count(id) IN (\000d\000aSELECT count(id)\000d\000aFROM project\000d\000aGROUP BY client_id\000d\000aORDER BY count(id) DESC\000d\000aLIMIT 1\000d\000a)[*]"; expected "NOT, IS, ILIKE, REGEXP, AND, _LOCAL_AND_GLOBAL_, OR, WINDOW, QUALIFY, INTERSECT, UNION, EXCEPT, MINUS, ORDER BY, OFFSET, FETCH, LIMIT, FOR, ,, )"; SQL statement:
+SELECT *
+FROM client
+WHERE id IN (
+SELECT client_id, count(id)
+FROM project
+GROUP BY client_id
+HAVING count(id) IN (
+SELECT count(id)
+FROM project
+GROUP BY client_id
+ORDER BY count(id) DESC
+LIMIT 1
+) [42001-214]
+2023-05-07 15:43:22 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "[*])"
+Syntax error in SQL statement "[*])"; SQL statement:
+) [42000-214]
+2023-05-07 15:43:40 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "SELECT *\000d\000aFROM client\000d\000aWHERE id IN (\000d\000aSELECT client_id, \000d\000aFROM project\000d\000aGROUP BY client_id\000d\000aHAVING count(id) IN (\000d\000aSELECT count(id)\000d\000aFROM project\000d\000aGROUP BY client_id\000d\000aORDER BY count(id) DESC\000d\000aLIMIT 1\000d\000a)[*]"; ожидалось "NOT, IS, ILIKE, REGEXP, AND, _LOCAL_AND_GLOBAL_, OR, WINDOW, QUALIFY, INTERSECT, UNION, EXCEPT, MINUS, ORDER BY, OFFSET, FETCH, LIMIT, FOR, ,, )"
+Syntax error in SQL statement "SELECT *\000d\000aFROM client\000d\000aWHERE id IN (\000d\000aSELECT client_id, \000d\000aFROM project\000d\000aGROUP BY client_id\000d\000aHAVING count(id) IN (\000d\000aSELECT count(id)\000d\000aFROM project\000d\000aGROUP BY client_id\000d\000aORDER BY count(id) DESC\000d\000aLIMIT 1\000d\000a)[*]"; expected "NOT, IS, ILIKE, REGEXP, AND, _LOCAL_AND_GLOBAL_, OR, WINDOW, QUALIFY, INTERSECT, UNION, EXCEPT, MINUS, ORDER BY, OFFSET, FETCH, LIMIT, FOR, ,, )"; SQL statement:
+SELECT *
+FROM client
+WHERE id IN (
+SELECT client_id, 
+FROM project
+GROUP BY client_id
+HAVING count(id) IN (
+SELECT count(id)
+FROM project
+GROUP BY client_id
+ORDER BY count(id) DESC
+LIMIT 1
+) [42001-214]
+2023-05-07 15:43:40 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "[*])"
+Syntax error in SQL statement "[*])"; SQL statement:
+) [42000-214]
+2023-05-08 15:41:09 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "WITH statement supports only SELECT, TABLE, VALUES, CREATE TABLE, INSERT, UPDATE, MERGE or DELETE statements"
+Syntax error in SQL statement "WITH statement supports only SELECT, TABLE, VALUES, CREATE TABLE, INSERT, UPDATE, MERGE or DELETE statements"; SQL statement:
+WITH projejct_count AS(
+SELECT count(id)
+FROM project
+GROUP BY client_id
+ORDER BY count(id) DESC
+LIMIT 1
+) [42000-214]
+2023-05-08 15:43:26 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "SELECT * FROM client\000d\000aJOIN \000d\000a[*]SELECT client_id, count(id)\000d\000aFROM project\000d\000aGROUP BY client_id\000d\000aHAVING count(id) IN (\000d\000aSELECT count(id)\000d\000aFROM project\000d\000aGROUP BY client_id\000d\000aORDER BY count(id) DESC\000d\000aLIMIT 1\000d\000a)"; ожидалось "identifier"
+Syntax error in SQL statement "SELECT * FROM client\000d\000aJOIN \000d\000a[*]SELECT client_id, count(id)\000d\000aFROM project\000d\000aGROUP BY client_id\000d\000aHAVING count(id) IN (\000d\000aSELECT count(id)\000d\000aFROM project\000d\000aGROUP BY client_id\000d\000aORDER BY count(id) DESC\000d\000aLIMIT 1\000d\000a)"; expected "identifier"; SQL statement:
+SELECT * FROM client
+JOIN 
+SELECT client_id, count(id)
+FROM project
+GROUP BY client_id
+HAVING count(id) IN (
+SELECT count(id)
+FROM project
+GROUP BY client_id
+ORDER BY count(id) DESC
+LIMIT 1
+) [42001-214]
+2023-05-08 15:47:23 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "WITH statement supports only SELECT, TABLE, VALUES, CREATE TABLE, INSERT, UPDATE, MERGE or DELETE statements"
+Syntax error in SQL statement "WITH statement supports only SELECT, TABLE, VALUES, CREATE TABLE, INSERT, UPDATE, MERGE or DELETE statements"; SQL statement:
+WITH new_table AS (
+SELECT client_id, count(id)
+FROM project
+GROUP BY client_id
+ORDER BY count(id) DESC
+LIMIT 1
+) [42000-214]
+2023-05-08 15:47:23 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "NEW_TABLE" не найдена
+Table "NEW_TABLE" not found; SQL statement:
+SELECT * 
+FROM client
+JOIN new_table ON 
+SELECT *
+FROM client id = new_table.client_id [42102-214]
+2023-05-08 15:48:42 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Сравнение массива (ARRAY) со скалярным значением
+Values of types "ROW(C1 BIGINT, C2 CHARACTER VARYING(100))" and "BIGINT" are not comparable; SQL statement:
+WITH new_table AS (
+SELECT client_id, count(id)
+FROM project
+GROUP BY client_id
+ORDER BY count(id) DESC
+LIMIT 1
+)
+SELECT * 
+FROM client
+JOIN new_table ON 
+SELECT *
+FROM client id = new_table.client_id [90110-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:632)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.value.TypeInfo.checkComparable(TypeInfo.java:766)
+	at org.h2.expression.condition.Comparison.optimize(Comparison.java:159)
+	at org.h2.expression.Expression.optimizeCondition(Expression.java:148)
+	at org.h2.command.query.Select.prepareExpressions(Select.java:1177)
+	at org.h2.command.query.Query.prepare(Query.java:218)
+	at org.h2.command.Parser.prepareCommand(Parser.java:575)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:237)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:223)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1339)
+	at org.h2.server.web.WebApp.query(WebApp.java:1137)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1103)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1090)
+	at org.h2.server.web.WebThread.process(WebThread.java:188)
+	at org.h2.server.web.WebThread.run(WebThread.java:101)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2023-05-08 15:52:05 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "WITH statement supports only SELECT, TABLE, VALUES, CREATE TABLE, INSERT, UPDATE, MERGE or DELETE statements"
+Syntax error in SQL statement "WITH statement supports only SELECT, TABLE, VALUES, CREATE TABLE, INSERT, UPDATE, MERGE or DELETE statements"; SQL statement:
+WITH tt AS ( 
+SELECT client_id, count(id)
+FROM project
+GROUP BY client_id
+ORDER BY count(id) DESC
+)
+JOIN client ON tt.client_id = id [42000-214]
+2023-05-08 15:58:03 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "SELECT * FROM client\000d\000aJOIN\000d\000a[*]WITH tt AS ( \000d\000aSELECT client_id, count(id)\000d\000aFROM project\000d\000aGROUP BY client_id\000d\000aORDER BY count(id) DESC\000d\000a) ON id = tt.client_id"; ожидалось "identifier"
+Syntax error in SQL statement "SELECT * FROM client\000d\000aJOIN\000d\000a[*]WITH tt AS ( \000d\000aSELECT client_id, count(id)\000d\000aFROM project\000d\000aGROUP BY client_id\000d\000aORDER BY count(id) DESC\000d\000a) ON id = tt.client_id"; expected "identifier"; SQL statement:
+SELECT * FROM client
+JOIN
+WITH tt AS ( 
+SELECT client_id, count(id)
+FROM project
+GROUP BY client_id
+ORDER BY count(id) DESC
+) ON id = tt.client_id [42001-214]
+2023-05-08 16:02:48 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "SELECT * FROM client\000d\000aJOIN\000d\000a[*]WITH tt (tt_id, tt_count) AS ( \000d\000aSELECT client_id, count(id)\000d\000aFROM project\000d\000aGROUP BY client_id\000d\000aORDER BY count(id) DESC\000d\000a) ON id = tt.tt_id"; ожидалось "identifier"
+Syntax error in SQL statement "SELECT * FROM client\000d\000aJOIN\000d\000a[*]WITH tt (tt_id, tt_count) AS ( \000d\000aSELECT client_id, count(id)\000d\000aFROM project\000d\000aGROUP BY client_id\000d\000aORDER BY count(id) DESC\000d\000a) ON id = tt.tt_id"; expected "identifier"; SQL statement:
+SELECT * FROM client
+JOIN
+WITH tt (tt_id, tt_count) AS ( 
+SELECT client_id, count(id)
+FROM project
+GROUP BY client_id
+ORDER BY count(id) DESC
+) ON id = tt.tt_id [42001-214]
+2023-05-08 16:11:53 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Столбец "TT.ID" не найден
+Column "TT.ID" not found; SQL statement:
+WITH tt  AS ( 
+SELECT client_id, count(id)
+FROM project
+GROUP BY client_id
+ORDER BY count(id) DESC
+)
+SELECT * FROM client
+JOIN tt ON id = tt.id [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:244)
+	at org.h2.expression.ExpressionColumn.optimizeOther(ExpressionColumn.java:226)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:213)
+	at org.h2.expression.condition.Comparison.optimize(Comparison.java:140)
+	at org.h2.expression.Expression.optimizeCondition(Expression.java:148)
+	at org.h2.command.query.Select.prepareExpressions(Select.java:1177)
+	at org.h2.command.query.Query.prepare(Query.java:218)
+	at org.h2.command.Parser.prepareCommand(Parser.java:575)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:237)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:223)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1339)
+	at org.h2.server.web.WebApp.query(WebApp.java:1137)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1103)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1090)
+	at org.h2.server.web.WebThread.process(WebThread.java:188)
+	at org.h2.server.web.WebThread.run(WebThread.java:101)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2023-05-08 16:11:58 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "([*]tt_id, tt_count)"; ожидалось "(, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "([*]tt_id, tt_count)"; expected "(, SELECT, TABLE, VALUES"; SQL statement:
+(tt_id, tt_count) [42001-214]
+2023-05-08 16:14:47 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Столбец "TT.TT_ID" не найден
+Column "TT.TT_ID" not found; SQL statement:
+WITH tt (client_id, project_count) AS ( 
+SELECT client_id, count(id)
+FROM project
+GROUP BY client_id
+ORDER BY count(id) DESC
+)
+SELECT id, name, project_count FROM client
+JOIN tt ON id = tt.tt_id [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:244)
+	at org.h2.expression.ExpressionColumn.optimizeOther(ExpressionColumn.java:226)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:213)
+	at org.h2.expression.condition.Comparison.optimize(Comparison.java:140)
+	at org.h2.expression.Expression.optimizeCondition(Expression.java:148)
+	at org.h2.command.query.Select.prepareExpressions(Select.java:1177)
+	at org.h2.command.query.Query.prepare(Query.java:218)
+	at org.h2.command.Parser.prepareCommand(Parser.java:575)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:237)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:223)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1339)
+	at org.h2.server.web.WebApp.query(WebApp.java:1137)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1103)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1090)
+	at org.h2.server.web.WebThread.process(WebThread.java:188)
+	at org.h2.server.web.WebThread.run(WebThread.java:101)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2023-05-08 16:16:28 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "SELECT * FROM client\000d\000aJOIN \000d\000a[*]SELECT client_id, count(id)\000d\000aFROM project\000d\000aGROUP BY client_id\000d\000aHAVING count(id) IN (\000d\000aSELECT count(id)\000d\000aFROM project\000d\000aGROUP BY client_id\000d\000aORDER BY count(id) DESC\000d\000aLIMIT 1\000d\000a)"; ожидалось "identifier"
+Syntax error in SQL statement "SELECT * FROM client\000d\000aJOIN \000d\000a[*]SELECT client_id, count(id)\000d\000aFROM project\000d\000aGROUP BY client_id\000d\000aHAVING count(id) IN (\000d\000aSELECT count(id)\000d\000aFROM project\000d\000aGROUP BY client_id\000d\000aORDER BY count(id) DESC\000d\000aLIMIT 1\000d\000a)"; expected "identifier"; SQL statement:
+SELECT * FROM client
+JOIN 
+SELECT client_id, count(id)
+FROM project
+GROUP BY client_id
+HAVING count(id) IN (
+SELECT count(id)
+FROM project
+GROUP BY client_id
+ORDER BY count(id) DESC
+LIMIT 1
+) [42001-214]
+2023-05-08 16:17:06 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Столбец "TT.CLIENT_ID" не найден
+Column "TT.CLIENT_ID" not found; SQL statement:
+WITH temp_table (client_id, project_count) AS ( 
+SELECT client_id, count(id)
+FROM project
+GROUP BY client_id
+ORDER BY count(id) DESC
+)
+SELECT id, name, project_count FROM client
+JOIN temp_table ON id = tt.client_id [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:244)
+	at org.h2.expression.ExpressionColumn.optimizeOther(ExpressionColumn.java:226)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:213)
+	at org.h2.expression.condition.Comparison.optimize(Comparison.java:140)
+	at org.h2.expression.Expression.optimizeCondition(Expression.java:148)
+	at org.h2.command.query.Select.prepareExpressions(Select.java:1177)
+	at org.h2.command.query.Query.prepare(Query.java:218)
+	at org.h2.command.Parser.prepareCommand(Parser.java:575)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:237)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:223)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1339)
+	at org.h2.server.web.WebApp.query(WebApp.java:1137)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1103)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1090)
+	at org.h2.server.web.WebThread.process(WebThread.java:188)
+	at org.h2.server.web.WebThread.run(WebThread.java:101)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2023-05-08 16:20:29 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "WITH temp_table (client_id, project_count) AS ( \000d\000aSELECT client_id, count(id)\000d\000aFROM project\000d\000aGROUP BY client_id\000d\000aORDER BY count(id) DESC\000d\000a)\000d\000aSELECT *\000d\000aFROM client\000d\000a\0009WHERE id IN (SELECT client_id\000d\000a\0009FROM project\000d\000a\0009GROUP BY client_id\000d\000a\0009HAVING count(id) IN (\000d\000a\0009\0009SELECT count(id)\000d\000a\0009\0009FROM project\000d\000a\0009\0009GROUP BY client_id\000d\000a\0009\0009ORDER BY count(id) DESC\000d\000a\0009\0009LIMIT 1\000d\000a\0009)\000d\000a) [*]JOIN temp_table ON id = temp_table.client_id"
+Syntax error in SQL statement "WITH temp_table (client_id, project_count) AS ( \000d\000aSELECT client_id, count(id)\000d\000aFROM project\000d\000aGROUP BY client_id\000d\000aORDER BY count(id) DESC\000d\000a)\000d\000aSELECT *\000d\000aFROM client\000d\000a\0009WHERE id IN (SELECT client_id\000d\000a\0009FROM project\000d\000a\0009GROUP BY client_id\000d\000a\0009HAVING count(id) IN (\000d\000a\0009\0009SELECT count(id)\000d\000a\0009\0009FROM project\000d\000a\0009\0009GROUP BY client_id\000d\000a\0009\0009ORDER BY count(id) DESC\000d\000a\0009\0009LIMIT 1\000d\000a\0009)\000d\000a) [*]JOIN temp_table ON id = temp_table.client_id"; SQL statement:
+WITH temp_table (client_id, project_count) AS ( 
+SELECT client_id, count(id)
+FROM project
+GROUP BY client_id
+ORDER BY count(id) DESC
+)
+SELECT *
+FROM client
+	WHERE id IN (SELECT client_id
+	FROM project
+	GROUP BY client_id
+	HAVING count(id) IN (
+		SELECT count(id)
+		FROM project
+		GROUP BY client_id
+		ORDER BY count(id) DESC
+		LIMIT 1
+	)
+) JOIN temp_table ON id = temp_table.client_id [42000-214]
+2023-05-08 16:43:48 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "WITH [*]month AS (\000d\000aSELECT DATEDIFF (month, start_date, finish_date) AS month_count\000d\000a\0009 FROM project \000d\000a\0009 ORDER BY month_count DESC"; ожидалось "identifier"
+Syntax error in SQL statement "WITH [*]month AS (\000d\000aSELECT DATEDIFF (month, start_date, finish_date) AS month_count\000d\000a\0009 FROM project \000d\000a\0009 ORDER BY month_count DESC"; expected "identifier"; SQL statement:
+WITH month AS (
+SELECT DATEDIFF (month, start_date, finish_date) AS month_count
+	 FROM project 
+	 ORDER BY month_count DESC [42001-214]
+2023-05-08 16:43:48 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "[*])\000d\000aSELECT * FROM month WHERE month.month_count =(SELECT max(month_count) FROM month)"
+Syntax error in SQL statement "[*])\000d\000aSELECT * FROM month WHERE month.month_count =(SELECT max(month_count) FROM month)"; SQL statement:
+)
+SELECT * FROM month WHERE month.month_count =(SELECT max(month_count) FROM month) [42000-214]
+2023-05-08 16:44:59 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "WITH [*]month AS (\000d\000aSELECT DATEDIFF (month, start_date, finish_date) AS month_count\000d\000a\0009 FROM project \000d\000a\0009 ORDER BY month_count DESC\000d\000a)\000d\000aSELECT * FROM month WHERE month.month_count =(SELECT max(month_count) FROM month)"; ожидалось "identifier"
+Syntax error in SQL statement "WITH [*]month AS (\000d\000aSELECT DATEDIFF (month, start_date, finish_date) AS month_count\000d\000a\0009 FROM project \000d\000a\0009 ORDER BY month_count DESC\000d\000a)\000d\000aSELECT * FROM month WHERE month.month_count =(SELECT max(month_count) FROM month)"; expected "identifier"; SQL statement:
+WITH month AS (
+SELECT DATEDIFF (month, start_date, finish_date) AS month_count
+	 FROM project 
+	 ORDER BY month_count DESC
+)
+SELECT * FROM month WHERE month.month_count =(SELECT max(month_count) FROM month) [42001-214]
+2023-05-08 16:55:08 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "WITH [*]MONTH (month_count) AS (\000d\000aSELECT DATEDIFF (month, start_date, finish_date) AS month_count\000d\000a\0009 FROM project \000d\000a\0009 ORDER BY month_count DESC\000d\000a) SELECT MAX(month_count) FROM MONTH"; ожидалось "identifier"
+Syntax error in SQL statement "WITH [*]MONTH (month_count) AS (\000d\000aSELECT DATEDIFF (month, start_date, finish_date) AS month_count\000d\000a\0009 FROM project \000d\000a\0009 ORDER BY month_count DESC\000d\000a) SELECT MAX(month_count) FROM MONTH"; expected "identifier"; SQL statement:
+WITH MONTH (month_count) AS (
+SELECT DATEDIFF (month, start_date, finish_date) AS month_count
+	 FROM project 
+	 ORDER BY month_count DESC
+) SELECT MAX(month_count) FROM MONTH [42001-214]
+2023-05-08 16:56:15 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "WITH [*]month (month_count) AS (\000d\000aSELECT DATEDIFF (month, start_date, finish_date) AS month_count\000d\000a\0009 FROM project \000d\000a\0009 ORDER BY month_count DESC\000d\000a) \000d\000aSELECT MAX(month_count) FROM month"; ожидалось "identifier"
+Syntax error in SQL statement "WITH [*]month (month_count) AS (\000d\000aSELECT DATEDIFF (month, start_date, finish_date) AS month_count\000d\000a\0009 FROM project \000d\000a\0009 ORDER BY month_count DESC\000d\000a) \000d\000aSELECT MAX(month_count) FROM month"; expected "identifier"; SQL statement:
+WITH month (month_count) AS (
+SELECT DATEDIFF (month, start_date, finish_date) AS month_count
+	 FROM project 
+	 ORDER BY month_count DESC
+) 
+SELECT MAX(month_count) FROM month [42001-214]
+2023-05-08 16:56:35 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "WITH [*]month (month_count) AS (\000d\000aSELECT DATEDIFF (month, start_date, finish_date) AS month_count\000d\000a\0009 FROM project \000d\000a\0009 ORDER BY month_count DESC\000d\000a) \000d\000aSELECT *FROM month"; ожидалось "identifier"
+Syntax error in SQL statement "WITH [*]month (month_count) AS (\000d\000aSELECT DATEDIFF (month, start_date, finish_date) AS month_count\000d\000a\0009 FROM project \000d\000a\0009 ORDER BY month_count DESC\000d\000a) \000d\000aSELECT *FROM month"; expected "identifier"; SQL statement:
+WITH month (month_count) AS (
+SELECT DATEDIFF (month, start_date, finish_date) AS month_count
+	 FROM project 
+	 ORDER BY month_count DESC
+) 
+SELECT *FROM month [42001-214]
+2023-05-08 17:00:00 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Столбец "ID" не найден
+Column "ID" not found; SQL statement:
+WITH temp_table (month_count) AS ( 
+SELECT DATEDIFF (month, start_date, finish_date) AS month_count
+	 FROM project 
+	 ORDER BY month_count DESC
+) 
+	SELECT id, MAX(month_count)
+	FROM temp_table [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:244)
+	at org.h2.expression.ExpressionColumn.optimizeOther(ExpressionColumn.java:226)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:213)
+	at org.h2.command.query.Select.prepareExpressions(Select.java:1170)
+	at org.h2.command.query.Query.prepare(Query.java:218)
+	at org.h2.command.Parser.prepareCommand(Parser.java:575)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:237)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:223)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1339)
+	at org.h2.server.web.WebApp.query(WebApp.java:1137)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1103)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1090)
+	at org.h2.server.web.WebThread.process(WebThread.java:188)
+	at org.h2.server.web.WebThread.run(WebThread.java:101)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2023-05-08 17:00:16 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Повтор имени столбца "MONTH_COUNT"
+Duplicate column name "MONTH_COUNT"; SQL statement:
+WITH temp_table (month_count) AS ( 
+SELECT id, DATEDIFF (month, start_date, finish_date) AS month_count
+	 FROM project 
+	 ORDER BY month_count DESC
+) 
+	SELECT id, MAX(month_count)
+	FROM temp_table [42121-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.table.Table.setColumns(Table.java:487)
+	at org.h2.table.TableView.initColumnsAndTables(TableView.java:177)
+	at org.h2.table.TableView.init(TableView.java:87)
+	at org.h2.table.TableView.<init>(TableView.java:49)
+	at org.h2.command.Parser.createCTEView(Parser.java:7457)
+	at org.h2.command.Parser.parseSingleCommonTableExpression(Parser.java:7438)
+	at org.h2.command.Parser.parseWith1(Parser.java:7314)
+	at org.h2.command.Parser.parseWith(Parser.java:7299)
+	at org.h2.command.Parser.parseWithStatementOrQuery(Parser.java:2576)
+	at org.h2.command.Parser.parsePrepared(Parser.java:728)
+	at org.h2.command.Parser.parse(Parser.java:689)
+	at org.h2.command.Parser.parse(Parser.java:661)
+	at org.h2.command.Parser.prepareCommand(Parser.java:569)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:237)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:223)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1339)
+	at org.h2.server.web.WebApp.query(WebApp.java:1137)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1103)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1090)
+	at org.h2.server.web.WebThread.process(WebThread.java:188)
+	at org.h2.server.web.WebThread.run(WebThread.java:101)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2023-05-08 17:01:01 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Столбец "ID" должен быть в предложении GROUP BY
+Column "ID" must be in the GROUP BY list; SQL statement:
+WITH temp_table (id, month_count) AS ( 
+SELECT id, DATEDIFF (month, start_date, finish_date) AS month_count
+	 FROM project 
+	 ORDER BY month_count DESC
+) 
+	SELECT id, MAX(month_count)
+	FROM temp_table [90016-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:632)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.expression.ExpressionColumn.updateAggregate(ExpressionColumn.java:266)
+	at org.h2.command.query.Select.updateAgg(Select.java:539)
+	at org.h2.command.query.Select.gatherGroup(Select.java:522)
+	at org.h2.command.query.Select.queryGroup(Select.java:488)
+	at org.h2.command.query.Select.queryWithoutCache(Select.java:828)
+	at org.h2.command.query.Query.queryWithoutCacheLazyCheck(Query.java:197)
+	at org.h2.command.query.Query.query(Query.java:512)
+	at org.h2.command.query.Query.query(Query.java:475)
+	at org.h2.command.CommandContainer.query(CommandContainer.java:251)
+	at org.h2.command.Command.executeQuery(Command.java:190)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:247)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:223)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1339)
+	at org.h2.server.web.WebApp.query(WebApp.java:1137)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1103)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1090)
+	at org.h2.server.web.WebThread.process(WebThread.java:188)
+	at org.h2.server.web.WebThread.run(WebThread.java:101)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2023-05-08 17:04:29 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "WITH temp_table (project, month_count) AS ( \000d\000aSELECT id, DATEDIFF (month, start_date, finish_date) AS month_count\000d\000a\0009 FROM project \000d\000a\0009 ORDER BY month_count DESC[*]"; ожидалось "NULLS, ,, OFFSET, FETCH, LIMIT, FOR, )"
+Syntax error in SQL statement "WITH temp_table (project, month_count) AS ( \000d\000aSELECT id, DATEDIFF (month, start_date, finish_date) AS month_count\000d\000a\0009 FROM project \000d\000a\0009 ORDER BY month_count DESC[*]"; expected "NULLS, ,, OFFSET, FETCH, LIMIT, FOR, )"; SQL statement:
+WITH temp_table (project, month_count) AS ( 
+SELECT id, DATEDIFF (month, start_date, finish_date) AS month_count
+	 FROM project 
+	 ORDER BY month_count DESC [42001-214]
+2023-05-08 17:04:29 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "[*])\000d\000aSELECT * FROM temp_table"
+Syntax error in SQL statement "[*])\000d\000aSELECT * FROM temp_table"; SQL statement:
+)
+SELECT * FROM temp_table [42000-214]
+2023-05-08 17:05:22 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Столбец "PROJECT" должен быть в предложении GROUP BY
+Column "PROJECT" must be in the GROUP BY list; SQL statement:
+WITH temp_table (project, month_count) AS ( 
+SELECT id, DATEDIFF (month, start_date, finish_date) AS month_count
+	 FROM project 
+	 ORDER BY month_count DESC
+)
+SELECT project, MAX(month_count) FROM temp_table [90016-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:632)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.expression.ExpressionColumn.updateAggregate(ExpressionColumn.java:266)
+	at org.h2.command.query.Select.updateAgg(Select.java:539)
+	at org.h2.command.query.Select.gatherGroup(Select.java:522)
+	at org.h2.command.query.Select.queryGroup(Select.java:488)
+	at org.h2.command.query.Select.queryWithoutCache(Select.java:828)
+	at org.h2.command.query.Query.queryWithoutCacheLazyCheck(Query.java:197)
+	at org.h2.command.query.Query.query(Query.java:512)
+	at org.h2.command.query.Query.query(Query.java:475)
+	at org.h2.command.CommandContainer.query(CommandContainer.java:251)
+	at org.h2.command.Command.executeQuery(Command.java:190)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:247)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:223)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1339)
+	at org.h2.server.web.WebApp.query(WebApp.java:1137)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1103)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1090)
+	at org.h2.server.web.WebThread.process(WebThread.java:188)
+	at org.h2.server.web.WebThread.run(WebThread.java:101)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2023-05-08 17:06:56 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Столбец "MONTH_COUNTFROM" не найден
+Column "MONTH_COUNTFROM" not found; SQL statement:
+WITH temp_table (project, month_count) AS ( 
+SELECT id, DATEDIFF (month, start_date, finish_date) AS month_count
+	 FROM project 
+	 ORDER BY month_count DESC
+)
+SELECT month_countFROM temp_table [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:244)
+	at org.h2.expression.ExpressionColumn.optimizeOther(ExpressionColumn.java:226)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:213)
+	at org.h2.expression.Alias.optimize(Alias.java:52)
+	at org.h2.command.query.Select.prepareExpressions(Select.java:1170)
+	at org.h2.command.query.Query.prepare(Query.java:218)
+	at org.h2.command.Parser.prepareCommand(Parser.java:575)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:237)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:223)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1339)
+	at org.h2.server.web.WebApp.query(WebApp.java:1137)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1103)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1090)
+	at org.h2.server.web.WebThread.process(WebThread.java:188)
+	at org.h2.server.web.WebThread.run(WebThread.java:101)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2023-05-08 17:13:54 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "SELECT 'ELDEST', name, birthday FROM worker ORDER BY birthday LIMIT 1\000d\000a[*]UNION\000d\000aSELECT  name, birthday FROM worker ORDER BY birthday DESC"
+Syntax error in SQL statement "SELECT 'ELDEST', name, birthday FROM worker ORDER BY birthday LIMIT 1\000d\000a[*]UNION\000d\000aSELECT  name, birthday FROM worker ORDER BY birthday DESC"; SQL statement:
+SELECT 'ELDEST', name, birthday FROM worker ORDER BY birthday LIMIT 1
+UNION
+SELECT  name, birthday FROM worker ORDER BY birthday DESC [42000-214]
+2023-05-08 17:14:59 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "SELECT id, count(name)\000d\000aFROM worker\000d\000aGROUP BY birthday\000d\000aORDER BY count (name) \000d\000aDESC LIMIT[*]"; ожидалось "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"
+Syntax error in SQL statement "SELECT id, count(name)\000d\000aFROM worker\000d\000aGROUP BY birthday\000d\000aORDER BY count (name) \000d\000aDESC LIMIT[*]"; expected "INTERSECTS (, NOT, EXISTS, UNIQUE, INTERSECTS"; SQL statement:
+SELECT id, count(name)
+FROM worker
+GROUP BY birthday
+ORDER BY count (name) 
+DESC LIMIT [42001-214]
+2023-05-08 17:32:19 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "SELECT name, birthday FROM worker WHERE birthday = (SELECT max(birthday) FROM worker) [*]AS YOUNGEST"
+Syntax error in SQL statement "SELECT name, birthday FROM worker WHERE birthday = (SELECT max(birthday) FROM worker) [*]AS YOUNGEST"; SQL statement:
+SELECT name, birthday FROM worker WHERE birthday = (SELECT max(birthday) FROM worker) AS YOUNGEST [42000-214]
+2023-05-08 17:32:30 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "SELECT name, birthday FROM worker WHERE birthday = (SELECT max(birthday) FROM worker) [*]AS 'YOUNGEST'"
+Syntax error in SQL statement "SELECT name, birthday FROM worker WHERE birthday = (SELECT max(birthday) FROM worker) [*]AS 'YOUNGEST'"; SQL statement:
+SELECT name, birthday FROM worker WHERE birthday = (SELECT max(birthday) FROM worker) AS 'YOUNGEST' [42000-214]
+2023-05-08 17:34:17 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "SELECT type AS [*]'youngest', name, birthday FROM worker WHERE birthday = (SELECT max(birthday) FROM worker)"; ожидалось "identifier"
+Syntax error in SQL statement "SELECT type AS [*]'youngest', name, birthday FROM worker WHERE birthday = (SELECT max(birthday) FROM worker)"; expected "identifier"; SQL statement:
+SELECT type AS 'youngest', name, birthday FROM worker WHERE birthday = (SELECT max(birthday) FROM worker) [42001-214]
+2023-05-08 17:34:32 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Столбец "TYPE" не найден
+Column "TYPE" not found; SQL statement:
+SELECT type AS younges, name, birthday FROM worker WHERE birthday = (SELECT max(birthday) FROM worker) [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:244)
+	at org.h2.expression.ExpressionColumn.optimizeOther(ExpressionColumn.java:226)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:213)
+	at org.h2.expression.Alias.optimize(Alias.java:52)
+	at org.h2.command.query.Select.prepareExpressions(Select.java:1170)
+	at org.h2.command.query.Query.prepare(Query.java:218)
+	at org.h2.command.Parser.prepareCommand(Parser.java:575)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:237)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:223)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1339)
+	at org.h2.server.web.WebApp.query(WebApp.java:1137)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1103)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1090)
+	at org.h2.server.web.WebThread.process(WebThread.java:188)
+	at org.h2.server.web.WebThread.run(WebThread.java:101)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2023-05-08 17:43:05 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "WITH youngest_worker (type, name, birthday) AS (\000d\000aSELECT name, birthday FROM worker WHERE birthday = (SELECT max(birthday) FROM worker)[*]"; ожидалось "., [, ::, AT, FORMAT, *, /, %, +, -, ||, NOT, IS, ILIKE, REGEXP, AND, _LOCAL_AND_GLOBAL_, OR, GROUP BY, HAVING, WINDOW, QUALIFY, INTERSECT, UNION, EXCEPT, MINUS, ORDER BY, OFFSET, FETCH, LIMIT, FOR, )"
+Syntax error in SQL statement "WITH youngest_worker (type, name, birthday) AS (\000d\000aSELECT name, birthday FROM worker WHERE birthday = (SELECT max(birthday) FROM worker)[*]"; expected "., [, ::, AT, FORMAT, *, /, %, +, -, ||, NOT, IS, ILIKE, REGEXP, AND, _LOCAL_AND_GLOBAL_, OR, GROUP BY, HAVING, WINDOW, QUALIFY, INTERSECT, UNION, EXCEPT, MINUS, ORDER BY, OFFSET, FETCH, LIMIT, FOR, )"; SQL statement:
+WITH youngest_worker (type, name, birthday) AS (
+SELECT name, birthday FROM worker WHERE birthday = (SELECT max(birthday) FROM worker) [42001-214]
+2023-05-08 17:43:05 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "[*])\000d\000aSELECT * FROM youngest_worke"
+Syntax error in SQL statement "[*])\000d\000aSELECT * FROM youngest_worke"; SQL statement:
+)
+SELECT * FROM youngest_worke [42000-214]
+2023-05-08 17:47:49 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "WITH youngest_worker(type [*]'youngest', name, birthday) AS(\000d\000aSELECT name, birthday FROM worker WHERE birthday = (SELECT max(birthday) FROM worker\000d\000a)select* from youngest_worker"; ожидалось ",, )"
+Syntax error in SQL statement "WITH youngest_worker(type [*]'youngest', name, birthday) AS(\000d\000aSELECT name, birthday FROM worker WHERE birthday = (SELECT max(birthday) FROM worker\000d\000a)select* from youngest_worker"; expected ",, )"; SQL statement:
+WITH youngest_worker(type 'youngest', name, birthday) AS(
+SELECT name, birthday FROM worker WHERE birthday = (SELECT max(birthday) FROM worker
+)select* from youngest_worker [42001-214]
+2023-05-08 17:48:15 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "WITH youngest_worker(type [*]as trtr, name, birthday) AS(\000d\000aSELECT name, birthday FROM worker WHERE birthday = (SELECT max(birthday) FROM worker\000d\000a)select* from youngest_worker"; ожидалось ",, )"
+Syntax error in SQL statement "WITH youngest_worker(type [*]as trtr, name, birthday) AS(\000d\000aSELECT name, birthday FROM worker WHERE birthday = (SELECT max(birthday) FROM worker\000d\000a)select* from youngest_worker"; expected ",, )"; SQL statement:
+WITH youngest_worker(type as trtr, name, birthday) AS(
+SELECT name, birthday FROM worker WHERE birthday = (SELECT max(birthday) FROM worker
+)select* from youngest_worker [42001-214]
+2023-05-08 17:49:29 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "WITH youngest_worker(type [*]= youngest, name, birthday) AS(\000d\000aSELECT name, birthday FROM worker WHERE birthday = (SELECT max(birthday) FROM worker\000d\000a)select* from youngest_worker"; ожидалось ",, )"
+Syntax error in SQL statement "WITH youngest_worker(type [*]= youngest, name, birthday) AS(\000d\000aSELECT name, birthday FROM worker WHERE birthday = (SELECT max(birthday) FROM worker\000d\000a)select* from youngest_worker"; expected ",, )"; SQL statement:
+WITH youngest_worker(type = youngest, name, birthday) AS(
+SELECT name, birthday FROM worker WHERE birthday = (SELECT max(birthday) FROM worker
+)select* from youngest_worker [42001-214]
+2023-05-08 17:56:53 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "SELECT name, birthday FROM worker WHERE birthday = (SELECT min(birthday) FROM worker)\000d\000a[*]unoin\000d\000aSELECT name, birthday FROM worker WHERE birthday = (SELECT max(birthday) FROM worker)"
+Syntax error in SQL statement "SELECT name, birthday FROM worker WHERE birthday = (SELECT min(birthday) FROM worker)\000d\000a[*]unoin\000d\000aSELECT name, birthday FROM worker WHERE birthday = (SELECT max(birthday) FROM worker)"; SQL statement:
+SELECT name, birthday FROM worker WHERE birthday = (SELECT min(birthday) FROM worker)
+unoin
+SELECT name, birthday FROM worker WHERE birthday = (SELECT max(birthday) FROM worker) [42000-214]
+2023-05-08 17:58:13 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "WITH youngest_worker AS (SELECT 'YOUNGEST' AS TYPE, NAME, BIRTHDAYFROM workerWHERE [*]BIRTHDAY = (SELECT MAX(BIRTHDAY) FROM worker))"; ожидалось ",, FROM, WHERE, GROUP BY, HAVING, WINDOW, QUALIFY, INTERSECT, UNION, EXCEPT, MINUS, ORDER BY, OFFSET, FETCH, LIMIT, FOR, )"
+Syntax error in SQL statement "WITH youngest_worker AS (SELECT 'YOUNGEST' AS TYPE, NAME, BIRTHDAYFROM workerWHERE [*]BIRTHDAY = (SELECT MAX(BIRTHDAY) FROM worker))"; expected ",, FROM, WHERE, GROUP BY, HAVING, WINDOW, QUALIFY, INTERSECT, UNION, EXCEPT, MINUS, ORDER BY, OFFSET, FETCH, LIMIT, FOR, )"; SQL statement:
+WITH youngest_worker AS (SELECT 'YOUNGEST' AS TYPE, NAME, BIRTHDAYFROM workerWHERE BIRTHDAY = (SELECT MAX(BIRTHDAY) FROM worker)) [42001-214]
+2023-05-08 17:58:47 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "WITH statement supports only SELECT, TABLE, VALUES, CREATE TABLE, INSERT, UPDATE, MERGE or DELETE statements"
+Syntax error in SQL statement "WITH statement supports only SELECT, TABLE, VALUES, CREATE TABLE, INSERT, UPDATE, MERGE or DELETE statements"; SQL statement:
+WITH youngest_worker AS (SELECT 'YOUNGEST' AS TYPE, NAME, BIRTHDAY  FROM worker WHERE BIRTHDAY = (SELECT MAX(BIRTHDAY) FROM worker)) [42000-214]
+2023-05-08 17:58:57 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "WITH statement supports only SELECT, TABLE, VALUES, CREATE TABLE, INSERT, UPDATE, MERGE or DELETE statements"
+Syntax error in SQL statement "WITH statement supports only SELECT, TABLE, VALUES, CREATE TABLE, INSERT, UPDATE, MERGE or DELETE statements"; SQL statement:
+WITH youngest_worker AS (SELECT 'YOUNGEST' AS TYPE, NAME, BIRTHDAY  FROM worker WHERE BIRTHDAY = (SELECT MAX(BIRTHDAY) FROM worker)) [42000-214]
+2023-05-08 17:59:00 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "WITH statement supports only SELECT, TABLE, VALUES, CREATE TABLE, INSERT, UPDATE, MERGE or DELETE statements"
+Syntax error in SQL statement "WITH statement supports only SELECT, TABLE, VALUES, CREATE TABLE, INSERT, UPDATE, MERGE or DELETE statements"; SQL statement:
+WITH youngest_worker AS (SELECT 'YOUNGEST' AS TYPE, NAME, BIRTHDAY  FROM worker WHERE BIRTHDAY = (SELECT MAX(BIRTHDAY) FROM worker)) [42000-214]
+2023-05-08 17:59:50 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "WITH statement supports only SELECT, TABLE, VALUES, CREATE TABLE, INSERT, UPDATE, MERGE or DELETE statements"
+Syntax error in SQL statement "WITH statement supports only SELECT, TABLE, VALUES, CREATE TABLE, INSERT, UPDATE, MERGE or DELETE statements"; SQL statement:
+WITH youngest_worker AS (
+SELECT 'YOUNGEST' AS type, name, birthday
+ FROM worker 
+WHERE BIRTHDAY = (SELECT max(birthday) FROM worker)) [42000-214]
+2023-05-08 18:01:25 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "SELECT name, birthday FROM worker WHERE birthday = (SELECT max(birthday) FROM worker[*]"; ожидалось "., TABLE (, (, USE, AS, RIGHT, LEFT, INNER, JOIN, CROSS, NATURAL, ,, WHERE, GROUP BY, HAVING, WINDOW, QUALIFY, INTERSECT, UNION, EXCEPT, MINUS, ORDER BY, OFFSET, FETCH, LIMIT, FOR, )"
+Syntax error in SQL statement "SELECT name, birthday FROM worker WHERE birthday = (SELECT max(birthday) FROM worker[*]"; expected "., TABLE (, (, USE, AS, RIGHT, LEFT, INNER, JOIN, CROSS, NATURAL, ,, WHERE, GROUP BY, HAVING, WINDOW, QUALIFY, INTERSECT, UNION, EXCEPT, MINUS, ORDER BY, OFFSET, FETCH, LIMIT, FOR, )"; SQL statement:
+SELECT name, birthday FROM worker WHERE birthday = (SELECT max(birthday) FROM worker [42001-214]
+2023-05-08 18:06:34 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "WITH youngest_worker AS (\000d\000aSELECT 'YOUNGEST' AS type, name, birthday FROM worker WHERE birthday = (SELECT max(birthday) FROM worker)\000d\000a)\000d\000a[*]WITH eldest_worker AS (\000d\000aSELECT 'ELDEST' AS type, name, birthday FROM worker WHERE birthday = (SELECT min(birthday) FROM worker)\000d\000a)\000d\000aSELECT * FROM youngest_worker \000d\000aUNION ALL \000d\000aSELECT * FROM eldest_worker"; ожидалось ",, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "WITH youngest_worker AS (\000d\000aSELECT 'YOUNGEST' AS type, name, birthday FROM worker WHERE birthday = (SELECT max(birthday) FROM worker)\000d\000a)\000d\000a[*]WITH eldest_worker AS (\000d\000aSELECT 'ELDEST' AS type, name, birthday FROM worker WHERE birthday = (SELECT min(birthday) FROM worker)\000d\000a)\000d\000aSELECT * FROM youngest_worker \000d\000aUNION ALL \000d\000aSELECT * FROM eldest_worker"; expected ",, (, SELECT, TABLE, VALUES"; SQL statement:
+WITH youngest_worker AS (
+SELECT 'YOUNGEST' AS type, name, birthday FROM worker WHERE birthday = (SELECT max(birthday) FROM worker)
+)
+WITH eldest_worker AS (
+SELECT 'ELDEST' AS type, name, birthday FROM worker WHERE birthday = (SELECT min(birthday) FROM worker)
+)
+SELECT * FROM youngest_worker 
+UNION ALL 
+SELECT * FROM eldest_worker [42001-214]
+2023-05-08 18:07:26 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "WITH youngest_worker AS (\000d\000aSELECT 'YOUNGEST' AS type, name, birthday FROM worker WHERE birthday = (SELECT max(birthday) FROM worker)\000d\000a)\000d\000a[*]WITH eldest_worker AS (\000d\000aSELECT 'ELDEST' AS type, name, birthday FROM worker WHERE birthday = (SELECT min(birthday) FROM worker)\000d\000a)\000d\000aSELECT * FROM youngest_worker \000d\000a\000d\000aSELECT * FROM eldest_worker"; ожидалось ",, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "WITH youngest_worker AS (\000d\000aSELECT 'YOUNGEST' AS type, name, birthday FROM worker WHERE birthday = (SELECT max(birthday) FROM worker)\000d\000a)\000d\000a[*]WITH eldest_worker AS (\000d\000aSELECT 'ELDEST' AS type, name, birthday FROM worker WHERE birthday = (SELECT min(birthday) FROM worker)\000d\000a)\000d\000aSELECT * FROM youngest_worker \000d\000a\000d\000aSELECT * FROM eldest_worker"; expected ",, (, SELECT, TABLE, VALUES"; SQL statement:
+WITH youngest_worker AS (
+SELECT 'YOUNGEST' AS type, name, birthday FROM worker WHERE birthday = (SELECT max(birthday) FROM worker)
+)
+WITH eldest_worker AS (
+SELECT 'ELDEST' AS type, name, birthday FROM worker WHERE birthday = (SELECT min(birthday) FROM worker)
+)
+SELECT * FROM youngest_worker 
+
+SELECT * FROM eldest_worker [42001-214]
+2023-05-08 18:07:43 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "WITH youngest_worker AS (\000d\000aSELECT 'YOUNGEST' AS type, name, birthday FROM worker WHERE birthday = (SELECT max(birthday) FROM worker)\000d\000a)\000d\000a[*]WITH eldest_worker AS (\000d\000aSELECT 'ELDEST' AS type, name, birthday FROM worker WHERE birthday = (SELECT min(birthday) FROM worker)\000d\000a)\000d\000aSELECT * FROM youngest_worker \000d\000aUNION\000d\000aSELECT * FROM eldest_worker"; ожидалось ",, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "WITH youngest_worker AS (\000d\000aSELECT 'YOUNGEST' AS type, name, birthday FROM worker WHERE birthday = (SELECT max(birthday) FROM worker)\000d\000a)\000d\000a[*]WITH eldest_worker AS (\000d\000aSELECT 'ELDEST' AS type, name, birthday FROM worker WHERE birthday = (SELECT min(birthday) FROM worker)\000d\000a)\000d\000aSELECT * FROM youngest_worker \000d\000aUNION\000d\000aSELECT * FROM eldest_worker"; expected ",, (, SELECT, TABLE, VALUES"; SQL statement:
+WITH youngest_worker AS (
+SELECT 'YOUNGEST' AS type, name, birthday FROM worker WHERE birthday = (SELECT max(birthday) FROM worker)
+)
+WITH eldest_worker AS (
+SELECT 'ELDEST' AS type, name, birthday FROM worker WHERE birthday = (SELECT min(birthday) FROM worker)
+)
+SELECT * FROM youngest_worker 
+UNION
+SELECT * FROM eldest_worker [42001-214]
+2023-05-08 18:10:22 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "SELECT 'ELDEST' AS type, name, birthday FROM worker WHERE birthday = (SELECT min(birthday) FROM worker)\000d\000a[*])\000d\000aSELECT * FROM eldest_worker"
+Syntax error in SQL statement "SELECT 'ELDEST' AS type, name, birthday FROM worker WHERE birthday = (SELECT min(birthday) FROM worker)\000d\000a[*])\000d\000aSELECT * FROM eldest_worker"; SQL statement:
+SELECT 'ELDEST' AS type, name, birthday FROM worker WHERE birthday = (SELECT min(birthday) FROM worker)
+)
+SELECT * FROM eldest_worker [42000-214]
+2023-05-08 18:11:20 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "WITH youngest_worker AS (\000d\000aSELECT 'YOUNGEST' AS type, name, birthday FROM worker WHERE birthday = (SELECT max(birthday) FROM worker)\000d\000a)\000d\000aSELECT * FROM youngest_worker UNION ALL\000d\000a\000d\000a[*]WITH eldest_worker AS (\000d\000aSELECT 'ELDEST' AS type, name, birthday FROM worker WHERE birthday = (SELECT min(birthday) FROM worker)\000d\000a)\000d\000aSELECT * FROM eldest_worker"; ожидалось "(, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "WITH youngest_worker AS (\000d\000aSELECT 'YOUNGEST' AS type, name, birthday FROM worker WHERE birthday = (SELECT max(birthday) FROM worker)\000d\000a)\000d\000aSELECT * FROM youngest_worker UNION ALL\000d\000a\000d\000a[*]WITH eldest_worker AS (\000d\000aSELECT 'ELDEST' AS type, name, birthday FROM worker WHERE birthday = (SELECT min(birthday) FROM worker)\000d\000a)\000d\000aSELECT * FROM eldest_worker"; expected "(, SELECT, TABLE, VALUES"; SQL statement:
+WITH youngest_worker AS (
+SELECT 'YOUNGEST' AS type, name, birthday FROM worker WHERE birthday = (SELECT max(birthday) FROM worker)
+)
+SELECT * FROM youngest_worker UNION ALL
+
+WITH eldest_worker AS (
+SELECT 'ELDEST' AS type, name, birthday FROM worker WHERE birthday = (SELECT min(birthday) FROM worker)
+)
+SELECT * FROM eldest_worker [42001-214]
+2023-05-08 18:12:43 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "WITH youngest_worker AS (\000d\000aSELECT 'YOUNGEST' AS type, name, birthday FROM worker WHERE birthday = (SELECT max(birthday) FROM worker)\000d\000a)\000d\000aSELECT * FROM youngest_worker UNION ALL[*]"; ожидалось "(, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "WITH youngest_worker AS (\000d\000aSELECT 'YOUNGEST' AS type, name, birthday FROM worker WHERE birthday = (SELECT max(birthday) FROM worker)\000d\000a)\000d\000aSELECT * FROM youngest_worker UNION ALL[*]"; expected "(, SELECT, TABLE, VALUES"; SQL statement:
+WITH youngest_worker AS (
+SELECT 'YOUNGEST' AS type, name, birthday FROM worker WHERE birthday = (SELECT max(birthday) FROM worker)
+)
+SELECT * FROM youngest_worker UNION ALL [42001-214]
+2023-05-08 18:12:50 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "WITH youngest_worker AS (\000d\000aSELECT 'YOUNGEST' AS type, name, birthday FROM worker WHERE birthday = (SELECT max(birthday) FROM worker)\000d\000a)\000d\000aSELECT * FROM youngest_worker UNION ALL[*]"; ожидалось "(, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "WITH youngest_worker AS (\000d\000aSELECT 'YOUNGEST' AS type, name, birthday FROM worker WHERE birthday = (SELECT max(birthday) FROM worker)\000d\000a)\000d\000aSELECT * FROM youngest_worker UNION ALL[*]"; expected "(, SELECT, TABLE, VALUES"; SQL statement:
+WITH youngest_worker AS (
+SELECT 'YOUNGEST' AS type, name, birthday FROM worker WHERE birthday = (SELECT max(birthday) FROM worker)
+)
+SELECT * FROM youngest_worker UNION ALL [42001-214]
+2023-05-08 18:14:56 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "WITH youngest_worker AS (\000d\000aSELECT 'YOUNGEST' AS type, name, birthday FROM worker WHERE birthday = (SELECT max(birthday) FROM worker)\000d\000a)\000d\000a[*]WITH eldest_worker AS (\000d\000aSELECT 'ELDEST' AS type, name, birthday FROM worker WHERE birthday = (SELECT min(birthday) FROM worker)\000d\000a)\000d\000aSELECT * FROM youngest_worker\000d\000aSELECT * FROM eldest_worker"; ожидалось ",, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "WITH youngest_worker AS (\000d\000aSELECT 'YOUNGEST' AS type, name, birthday FROM worker WHERE birthday = (SELECT max(birthday) FROM worker)\000d\000a)\000d\000a[*]WITH eldest_worker AS (\000d\000aSELECT 'ELDEST' AS type, name, birthday FROM worker WHERE birthday = (SELECT min(birthday) FROM worker)\000d\000a)\000d\000aSELECT * FROM youngest_worker\000d\000aSELECT * FROM eldest_worker"; expected ",, (, SELECT, TABLE, VALUES"; SQL statement:
+WITH youngest_worker AS (
+SELECT 'YOUNGEST' AS type, name, birthday FROM worker WHERE birthday = (SELECT max(birthday) FROM worker)
+)
+WITH eldest_worker AS (
+SELECT 'ELDEST' AS type, name, birthday FROM worker WHERE birthday = (SELECT min(birthday) FROM worker)
+)
+SELECT * FROM youngest_worker
+SELECT * FROM eldest_worker [42001-214]
+2023-05-08 18:15:18 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "WITH youngest_worker AS (\000d\000aSELECT 'YOUNGEST' AS type, name, birthday FROM worker WHERE birthday = (SELECT max(birthday) FROM worker)\000d\000a)\000d\000a[*]WITH eldest_worker AS (\000d\000aSELECT 'ELDEST' AS type, name, birthday FROM worker WHERE birthday = (SELECT min(birthday) FROM worker)\000d\000a)\000d\000aSELECT * FROM youngest_worker\000d\000aUNION\000d\000aSELECT * FROM eldest_worker"; ожидалось ",, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "WITH youngest_worker AS (\000d\000aSELECT 'YOUNGEST' AS type, name, birthday FROM worker WHERE birthday = (SELECT max(birthday) FROM worker)\000d\000a)\000d\000a[*]WITH eldest_worker AS (\000d\000aSELECT 'ELDEST' AS type, name, birthday FROM worker WHERE birthday = (SELECT min(birthday) FROM worker)\000d\000a)\000d\000aSELECT * FROM youngest_worker\000d\000aUNION\000d\000aSELECT * FROM eldest_worker"; expected ",, (, SELECT, TABLE, VALUES"; SQL statement:
+WITH youngest_worker AS (
+SELECT 'YOUNGEST' AS type, name, birthday FROM worker WHERE birthday = (SELECT max(birthday) FROM worker)
+)
+WITH eldest_worker AS (
+SELECT 'ELDEST' AS type, name, birthday FROM worker WHERE birthday = (SELECT min(birthday) FROM worker)
+)
+SELECT * FROM youngest_worker
+UNION
+SELECT * FROM eldest_worker [42001-214]
+2023-05-08 18:15:45 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "WITH youngest_worker AS (\000d\000aSELECT 'YOUNGEST' AS type, name, birthday FROM worker WHERE birthday = (SELECT max(birthday) FROM worker)\000d\000a)\000d\000a[*]WITH eldest_worker AS (\000d\000aSELECT 'ELDEST' AS type, name, birthday FROM worker WHERE birthday = (SELECT min(birthday) FROM worker)\000d\000a)\000d\000aSELECT name FROM youngest_worker\000d\000aUNION\000d\000aSELECT name FROM eldest_worker"; ожидалось ",, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "WITH youngest_worker AS (\000d\000aSELECT 'YOUNGEST' AS type, name, birthday FROM worker WHERE birthday = (SELECT max(birthday) FROM worker)\000d\000a)\000d\000a[*]WITH eldest_worker AS (\000d\000aSELECT 'ELDEST' AS type, name, birthday FROM worker WHERE birthday = (SELECT min(birthday) FROM worker)\000d\000a)\000d\000aSELECT name FROM youngest_worker\000d\000aUNION\000d\000aSELECT name FROM eldest_worker"; expected ",, (, SELECT, TABLE, VALUES"; SQL statement:
+WITH youngest_worker AS (
+SELECT 'YOUNGEST' AS type, name, birthday FROM worker WHERE birthday = (SELECT max(birthday) FROM worker)
+)
+WITH eldest_worker AS (
+SELECT 'ELDEST' AS type, name, birthday FROM worker WHERE birthday = (SELECT min(birthday) FROM worker)
+)
+SELECT name FROM youngest_worker
+UNION
+SELECT name FROM eldest_worker [42001-214]
+2023-05-08 18:18:10 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "WITH youngest_worker AS (\000d\000aSELECT 'YOUNGEST' AS type, name, birthday FROM worker WHERE birthday = (SELECT max(birthday) FROM worker)\000d\000a)\000d\000a[*]WITH eldest_worker AS (\000d\000aSELECT 'ELDEST' AS type, name, birthday FROM worker WHERE birthday = (SELECT min(birthday) FROM worker)\000d\000a)\000d\000aSELECT * FROM youngest_worker\000d\000aUNION ALL\000d\000aSELECT * FROM eldest_worker"; ожидалось ",, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "WITH youngest_worker AS (\000d\000aSELECT 'YOUNGEST' AS type, name, birthday FROM worker WHERE birthday = (SELECT max(birthday) FROM worker)\000d\000a)\000d\000a[*]WITH eldest_worker AS (\000d\000aSELECT 'ELDEST' AS type, name, birthday FROM worker WHERE birthday = (SELECT min(birthday) FROM worker)\000d\000a)\000d\000aSELECT * FROM youngest_worker\000d\000aUNION ALL\000d\000aSELECT * FROM eldest_worker"; expected ",, (, SELECT, TABLE, VALUES"; SQL statement:
+WITH youngest_worker AS (
+SELECT 'YOUNGEST' AS type, name, birthday FROM worker WHERE birthday = (SELECT max(birthday) FROM worker)
+)
+WITH eldest_worker AS (
+SELECT 'ELDEST' AS type, name, birthday FROM worker WHERE birthday = (SELECT min(birthday) FROM worker)
+)
+SELECT * FROM youngest_worker
+UNION ALL
+SELECT * FROM eldest_worker [42001-214]
+2023-05-08 18:18:57 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "WITH youngest_worker AS (\000d\000aSELECT 'YOUNGEST' AS type, name, birthday FROM worker WHERE birthday = (SELECT max(birthday) FROM worker)\000d\000a)\000d\000a[*]WITH eldest_worker AS (\000d\000aSELECT 'ELDEST' AS type, name, birthday FROM worker WHERE birthday = (SELECT min(birthday) FROM worker)\000d\000a)\000d\000aSELECT * FROM youngest_worker\000d\000aUNIONALL\000d\000aSELECT * FROM eldest_worker"; ожидалось ",, (, SELECT, TABLE, VALUES"
+Syntax error in SQL statement "WITH youngest_worker AS (\000d\000aSELECT 'YOUNGEST' AS type, name, birthday FROM worker WHERE birthday = (SELECT max(birthday) FROM worker)\000d\000a)\000d\000a[*]WITH eldest_worker AS (\000d\000aSELECT 'ELDEST' AS type, name, birthday FROM worker WHERE birthday = (SELECT min(birthday) FROM worker)\000d\000a)\000d\000aSELECT * FROM youngest_worker\000d\000aUNIONALL\000d\000aSELECT * FROM eldest_worker"; expected ",, (, SELECT, TABLE, VALUES"; SQL statement:
+WITH youngest_worker AS (
+SELECT 'YOUNGEST' AS type, name, birthday FROM worker WHERE birthday = (SELECT max(birthday) FROM worker)
+)
+WITH eldest_worker AS (
+SELECT 'ELDEST' AS type, name, birthday FROM worker WHERE birthday = (SELECT min(birthday) FROM worker)
+)
+SELECT * FROM youngest_worker
+UNIONALL
+SELECT * FROM eldest_worker [42001-214]
+2023-05-08 18:37:57 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "TEMP_TABLE" не найдена
+Table "TEMP_TABLE" not found; SQL statement:
+SELECT * FROM temp_table 
+WHERE month_count = 
+				(SELECT max(month_count) FROM temp_table) [42102-214]
+2023-05-08 18:50:58 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Столбец "WORKER_ID" должен быть в предложении GROUP BY
+Column "WORKER_ID" must be in the GROUP BY list; SQL statement:
+select worker_id from project_worker
+GROUP BY project_id [90016-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:632)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.expression.ExpressionColumn.updateAggregate(ExpressionColumn.java:266)
+	at org.h2.command.query.Select.updateAgg(Select.java:539)
+	at org.h2.command.query.Select$LazyResultGroupSorted.fetchNextRow(Select.java:1919)
+	at org.h2.result.LazyResult.hasNext(LazyResult.java:78)
+	at org.h2.result.FetchedResult.next(FetchedResult.java:34)
+	at org.h2.command.query.Select.queryGroupSorted(Select.java:320)
+	at org.h2.command.query.Select.queryWithoutCache(Select.java:826)
+	at org.h2.command.query.Query.queryWithoutCacheLazyCheck(Query.java:197)
+	at org.h2.command.query.Query.query(Query.java:512)
+	at org.h2.command.query.Query.query(Query.java:475)
+	at org.h2.command.CommandContainer.query(CommandContainer.java:251)
+	at org.h2.command.Command.executeQuery(Command.java:190)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:247)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:223)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1339)
+	at org.h2.server.web.WebApp.query(WebApp.java:1137)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1103)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1090)
+	at org.h2.server.web.WebThread.process(WebThread.java:188)
+	at org.h2.server.web.WebThread.run(WebThread.java:101)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2023-05-08 18:51:46 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "select project _id from project_worker\000d\000aGROUP BY project [*]_id"
+Syntax error in SQL statement "select project _id from project_worker\000d\000aGROUP BY project [*]_id"; SQL statement:
+select project _id from project_worker
+GROUP BY project _id [42000-214]
+2023-05-08 18:52:13 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Столбец "PROJECT" не найден
+Column "PROJECT" not found; SQL statement:
+select project _id from project_worker [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:244)
+	at org.h2.expression.ExpressionColumn.optimizeOther(ExpressionColumn.java:226)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:213)
+	at org.h2.expression.Alias.optimize(Alias.java:52)
+	at org.h2.command.query.Select.prepareExpressions(Select.java:1170)
+	at org.h2.command.query.Query.prepare(Query.java:218)
+	at org.h2.command.Parser.prepareCommand(Parser.java:575)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:237)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:223)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1339)
+	at org.h2.server.web.WebApp.query(WebApp.java:1137)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1103)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1090)
+	at org.h2.server.web.WebThread.process(WebThread.java:188)
+	at org.h2.server.web.WebThread.run(WebThread.java:101)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2023-05-09 16:10:00 jdbc[6]: null
+org.h2.message.DbException: Незакрытое приложением соединение уничтожено сборщиком мусора
+The connection was not closed by the application and is garbage collected [90018-214]
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.message.DbException.get(DbException.java:188)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:190)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:132)
+	at org.h2.util.JdbcUtils.getConnection(JdbcUtils.java:288)
+	at org.h2.server.web.WebServer.getConnection(WebServer.java:808)
+	at org.h2.server.web.WebApp.login(WebApp.java:1033)
+	at org.h2.server.web.WebApp.process(WebApp.java:226)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:176)
+	at org.h2.server.web.WebThread.process(WebThread.java:152)
+	at org.h2.server.web.WebThread.run(WebThread.java:101)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: Незакрытое приложением соединение уничтожено сборщиком мусора
+The connection was not closed by the application and is garbage collected [90018-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:678)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	... 13 more
+2023-05-09 16:25:50 jdbc[7]: null
+org.h2.message.DbException: Незакрытое приложением соединение уничтожено сборщиком мусора
+The connection was not closed by the application and is garbage collected [90018-214]
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.message.DbException.get(DbException.java:188)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:190)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:132)
+	at org.h2.util.JdbcUtils.getConnection(JdbcUtils.java:288)
+	at org.h2.server.web.WebServer.getConnection(WebServer.java:808)
+	at org.h2.server.web.WebApp.login(WebApp.java:1033)
+	at org.h2.server.web.WebApp.process(WebApp.java:226)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:176)
+	at org.h2.server.web.WebThread.process(WebThread.java:152)
+	at org.h2.server.web.WebThread.run(WebThread.java:101)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientConnectionException: Незакрытое приложением соединение уничтожено сборщиком мусора
+The connection was not closed by the application and is garbage collected [90018-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:678)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	... 13 more
+2023-05-09 16:25:57 jdbc[7]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "select sum(salary)[*]'summa' from worker where id in(\000d\000aselect worker_id from project_worker)"
+Syntax error in SQL statement "select sum(salary)[*]'summa' from worker where id in(\000d\000aselect worker_id from project_worker)"; SQL statement:
+select sum(salary)'summa' from worker where id in(
+select worker_id from project_worker) [42000-214]
+2023-05-09 16:26:17 jdbc[7]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "select salary [*]'summa' from worker where id in(\000d\000aselect worker_id from project_worker)"
+Syntax error in SQL statement "select salary [*]'summa' from worker where id in(\000d\000aselect worker_id from project_worker)"; SQL statement:
+select salary 'summa' from worker where id in(
+select worker_id from project_worker) [42000-214]
+2023-05-09 16:33:27 jdbc[7]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Синтаксическая ошибка в выражении SQL "select sum(salary)[*]'summa' from worker where id in(\000d\000aselect worker_id from project_worker where id = 14)"
+Syntax error in SQL statement "select sum(salary)[*]'summa' from worker where id in(\000d\000aselect worker_id from project_worker where id = 14)"; SQL statement:
+select sum(salary)'summa' from worker where id in(
+select worker_id from project_worker where id = 14) [42000-214]
+2023-05-11 12:44:19 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Столбец "PROJECT.ID" должен быть в предложении GROUP BY
+Column "PROJECT.ID" must be in the GROUP BY list; SQL statement:
+select 
+    concat('Project ',project.id) as name, 
+    sum(worker.salary *DATEDIFF(MONTH, project.start_date, project.finish_date)) as price from project_worker
+left join worker on worker.id = project_worker.worker_id
+left join project on project.id = project_worker.project_id
+
+order by price desc [90016-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:632)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.expression.ExpressionColumn.updateAggregate(ExpressionColumn.java:266)
+	at org.h2.expression.OperationN.updateAggregate(OperationN.java:99)
+	at org.h2.expression.Alias.updateAggregate(Alias.java:74)
+	at org.h2.command.query.Select.updateAgg(Select.java:539)
+	at org.h2.command.query.Select.gatherGroup(Select.java:522)
+	at org.h2.command.query.Select.queryGroup(Select.java:488)
+	at org.h2.command.query.Select.queryWithoutCache(Select.java:828)
+	at org.h2.command.query.Query.queryWithoutCacheLazyCheck(Query.java:197)
+	at org.h2.command.query.Query.query(Query.java:512)
+	at org.h2.command.query.Query.query(Query.java:475)
+	at org.h2.command.CommandContainer.query(CommandContainer.java:251)
+	at org.h2.command.Command.executeQuery(Command.java:190)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:247)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:223)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1339)
+	at org.h2.server.web.WebApp.query(WebApp.java:1137)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1103)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1090)
+	at org.h2.server.web.WebThread.process(WebThread.java:188)
+	at org.h2.server.web.WebThread.run(WebThread.java:101)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2023-05-11 12:49:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Столбец "WORKER.SALARY" не найден
+Column "WORKER.SALARY" not found; SQL statement:
+select   sum(worker.salary *DATEDIFF(MONTH, project.start_date, project.finish_date)) as price from project_worker [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:244)
+	at org.h2.expression.ExpressionColumn.optimizeOther(ExpressionColumn.java:226)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:213)
+	at org.h2.expression.BinaryOperation.optimize(BinaryOperation.java:130)
+	at org.h2.expression.aggregate.AbstractAggregate.optimize(AbstractAggregate.java:101)
+	at org.h2.expression.aggregate.Aggregate.optimize(Aggregate.java:920)
+	at org.h2.expression.Alias.optimize(Alias.java:52)
+	at org.h2.command.query.Select.prepareExpressions(Select.java:1170)
+	at org.h2.command.query.Query.prepare(Query.java:218)
+	at org.h2.command.Parser.prepareCommand(Parser.java:575)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:237)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:223)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1339)
+	at org.h2.server.web.WebApp.query(WebApp.java:1137)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1103)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1090)
+	at org.h2.server.web.WebThread.process(WebThread.java:188)
+	at org.h2.server.web.WebThread.run(WebThread.java:101)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2023-05-11 12:49:41 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Столбец "PROJECT.ID" не найден
+Column "PROJECT.ID" not found; SQL statement:
+select 
+    concat('Project ',project.id) as name, 
+    sum(worker.salary *DATEDIFF(MONTH, project.start_date, project.finish_date)) as price from project_worker [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:244)
+	at org.h2.expression.ExpressionColumn.optimizeOther(ExpressionColumn.java:226)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:213)
+	at org.h2.expression.OperationN.optimizeArguments(OperationN.java:80)
+	at org.h2.expression.function.ConcatFunction.optimize(ConcatFunction.java:74)
+	at org.h2.expression.Alias.optimize(Alias.java:52)
+	at org.h2.command.query.Select.prepareExpressions(Select.java:1170)
+	at org.h2.command.query.Query.prepare(Query.java:218)
+	at org.h2.command.Parser.prepareCommand(Parser.java:575)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:237)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:223)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1339)
+	at org.h2.server.web.WebApp.query(WebApp.java:1137)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1103)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1090)
+	at org.h2.server.web.WebThread.process(WebThread.java:188)
+	at org.h2.server.web.WebThread.run(WebThread.java:101)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2023-05-11 12:49:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Столбец "PROJECT.ID" не найден
+Column "PROJECT.ID" not found; SQL statement:
+select 
+    concat('Project ',project.id) as name, 
+    sum(worker.salary *DATEDIFF(MONTH, project.start_date, project.finish_date)) as price from project_worker [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.expression.ExpressionColumn.getColumnException(ExpressionColumn.java:244)
+	at org.h2.expression.ExpressionColumn.optimizeOther(ExpressionColumn.java:226)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:213)
+	at org.h2.expression.OperationN.optimizeArguments(OperationN.java:80)
+	at org.h2.expression.function.ConcatFunction.optimize(ConcatFunction.java:74)
+	at org.h2.expression.Alias.optimize(Alias.java:52)
+	at org.h2.command.query.Select.prepareExpressions(Select.java:1170)
+	at org.h2.command.query.Query.prepare(Query.java:218)
+	at org.h2.command.Parser.prepareCommand(Parser.java:575)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:237)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:223)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1339)
+	at org.h2.server.web.WebApp.query(WebApp.java:1137)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1103)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1090)
+	at org.h2.server.web.WebThread.process(WebThread.java:188)
+	at org.h2.server.web.WebThread.run(WebThread.java:101)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2023-05-11 13:22:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Столбец "projectCount" не найден
+Column "projectCount" not found [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.jdbc.JdbcResultSet.getColumnIndex(JdbcResultSet.java:3518)
+	at org.h2.jdbc.JdbcResultSet.getInt(JdbcResultSet.java:337)
+	at DbServises.DatabaseQueryService.findMaxProjectsClient(DatabaseQueryService.java:46)
+	at Main.main(Main.java:21)
+2023-05-11 13:25:26 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Столбец "projectCount" не найден
+Column "projectCount" not found [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.jdbc.JdbcResultSet.getColumnIndex(JdbcResultSet.java:3518)
+	at org.h2.jdbc.JdbcResultSet.getInt(JdbcResultSet.java:337)
+	at DbServises.DatabaseQueryService.findMaxProjectsClient(DatabaseQueryService.java:46)
+	at Main.main(Main.java:21)
+2023-05-11 13:25:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Столбец "projectCount" не найден
+Column "projectCount" not found [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.jdbc.JdbcResultSet.getColumnIndex(JdbcResultSet.java:3518)
+	at org.h2.jdbc.JdbcResultSet.getInt(JdbcResultSet.java:337)
+	at DbServises.DatabaseQueryService.findMaxProjectsClient(DatabaseQueryService.java:46)
+	at Main.main(Main.java:21)
+2023-05-11 13:27:20 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Столбец "projectCount" не найден
+Column "projectCount" not found [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.jdbc.JdbcResultSet.getColumnIndex(JdbcResultSet.java:3518)
+	at org.h2.jdbc.JdbcResultSet.getInt(JdbcResultSet.java:337)
+	at DbServises.DatabaseQueryService.findMaxProjectsClient(DatabaseQueryService.java:46)
+	at Main.main(Main.java:21)
+2023-05-11 13:29:03 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Столбец "client_id" не найден
+Column "client_id" not found [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.jdbc.JdbcResultSet.getColumnIndex(JdbcResultSet.java:3518)
+	at org.h2.jdbc.JdbcResultSet.getString(JdbcResultSet.java:301)
+	at DbServises.DatabaseQueryService.findMaxProjectsClient(DatabaseQueryService.java:45)
+	at Main.main(Main.java:21)
+2023-05-11 13:29:41 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Столбец "projectCount" не найден
+Column "projectCount" not found [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.jdbc.JdbcResultSet.getColumnIndex(JdbcResultSet.java:3518)
+	at org.h2.jdbc.JdbcResultSet.getInt(JdbcResultSet.java:337)
+	at DbServises.DatabaseQueryService.findMaxProjectsClient(DatabaseQueryService.java:46)
+	at Main.main(Main.java:21)
+2023-05-11 13:52:57 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Столбец "id" не найден
+Column "id" not found [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.jdbc.JdbcResultSet.getColumnIndex(JdbcResultSet.java:3518)
+	at org.h2.jdbc.JdbcResultSet.getInt(JdbcResultSet.java:337)
+	at DbServises.DatabaseQueryService.findLongestProject(DatabaseQueryService.java:62)
+	at Main.main(Main.java:18)
+2023-05-11 14:04:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Столбец "name" не найден
+Column "name" not found [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.jdbc.JdbcResultSet.getColumnIndex(JdbcResultSet.java:3518)
+	at org.h2.jdbc.JdbcResultSet.getString(JdbcResultSet.java:301)
+	at DbServises.DatabaseQueryService.findProjectPrice(DatabaseQueryService.java:80)
+	at Main.main(Main.java:18)
+2023-05-11 14:07:41 database: flush
+org.h2.message.DbException: Внутренняя ошибка: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/HP/IdeaProjects/JDBC_TEST/test_db.mv.db [2.1.214/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/HP/IdeaProjects/JDBC_TEST/test_db.mv.db [2.1.214/7]" [50000-214]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.DbException.convert(DbException.java:395)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:125)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:3318)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:593)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:469)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:4082)
+	at org.h2.mvstore.db.Store.<init>(Store.java:136)
+	at org.h2.engine.Database.<init>(Database.java:324)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:252)
+	at DataBase.DataBase.<init>(DataBase.java:12)
+	at DataBase.DataBase.<clinit>(DataBase.java:6)
+	at Main.main(Main.java:15)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: Внутренняя ошибка: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/HP/IdeaProjects/JDBC_TEST/test_db.mv.db [2.1.214/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/HP/IdeaProjects/JDBC_TEST/test_db.mv.db [2.1.214/7]" [50000-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:554)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	... 20 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/HP/IdeaProjects/JDBC_TEST/test_db.mv.db [2.1.214/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:1004)
+	at org.h2.mvstore.FileStore.open(FileStore.java:178)
+	at org.h2.mvstore.FileStore.open(FileStore.java:128)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:452)
+	... 14 more
+2023-05-11 14:07:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Столбец "id" не найден
+Column "id" not found [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.jdbc.JdbcResultSet.getColumnIndex(JdbcResultSet.java:3518)
+	at org.h2.jdbc.JdbcResultSet.getString(JdbcResultSet.java:301)
+	at DbServises.DatabaseQueryService.findProjectPrice(DatabaseQueryService.java:80)
+	at Main.main(Main.java:18)
+2023-05-11 14:08:11 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Столбец "NAME" не найден
+Column "NAME" not found [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.jdbc.JdbcResultSet.getColumnIndex(JdbcResultSet.java:3518)
+	at org.h2.jdbc.JdbcResultSet.getString(JdbcResultSet.java:301)
+	at DbServises.DatabaseQueryService.findProjectPrice(DatabaseQueryService.java:80)
+	at Main.main(Main.java:18)
+2023-05-11 14:08:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Столбец  не найден
+Column  not found [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.jdbc.JdbcResultSet.getColumnIndex(JdbcResultSet.java:3518)
+	at org.h2.jdbc.JdbcResultSet.getString(JdbcResultSet.java:301)
+	at DbServises.DatabaseQueryService.findProjectPrice(DatabaseQueryService.java:80)
+	at Main.main(Main.java:18)
+2023-05-11 14:09:42 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Столбец "price" не найден
+Column "price" not found [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.jdbc.JdbcResultSet.getColumnIndex(JdbcResultSet.java:3518)
+	at org.h2.jdbc.JdbcResultSet.getBigDecimal(JdbcResultSet.java:455)
+	at DbServises.DatabaseQueryService.findProjectPrice(DatabaseQueryService.java:80)
+	at Main.main(Main.java:18)
+2023-05-11 14:12:36 database: flush
+org.h2.message.DbException: Внутренняя ошибка: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/HP/IdeaProjects/JDBC_TEST/test_db.mv.db [2.1.214/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/HP/IdeaProjects/JDBC_TEST/test_db.mv.db [2.1.214/7]" [50000-214]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.DbException.convert(DbException.java:395)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:125)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:3318)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:593)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:469)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:4082)
+	at org.h2.mvstore.db.Store.<init>(Store.java:136)
+	at org.h2.engine.Database.<init>(Database.java:324)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:252)
+	at DataBase.DataBase.<init>(DataBase.java:12)
+	at DataBase.DataBase.<clinit>(DataBase.java:6)
+	at Main.main(Main.java:15)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: Внутренняя ошибка: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/HP/IdeaProjects/JDBC_TEST/test_db.mv.db [2.1.214/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/HP/IdeaProjects/JDBC_TEST/test_db.mv.db [2.1.214/7]" [50000-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:554)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	... 20 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/HP/IdeaProjects/JDBC_TEST/test_db.mv.db [2.1.214/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:1004)
+	at org.h2.mvstore.FileStore.open(FileStore.java:178)
+	at org.h2.mvstore.FileStore.open(FileStore.java:128)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:452)
+	... 14 more
+2023-05-11 14:13:58 database: flush
+org.h2.message.DbException: Внутренняя ошибка: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/HP/IdeaProjects/JDBC_TEST/test_db.mv.db [2.1.214/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/HP/IdeaProjects/JDBC_TEST/test_db.mv.db [2.1.214/7]" [50000-214]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.DbException.convert(DbException.java:395)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:125)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:3318)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:593)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:469)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:4082)
+	at org.h2.mvstore.db.Store.<init>(Store.java:136)
+	at org.h2.engine.Database.<init>(Database.java:324)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:252)
+	at DataBase.DataBase.<init>(DataBase.java:12)
+	at DataBase.DataBase.<clinit>(DataBase.java:6)
+	at Main.main(Main.java:15)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: Внутренняя ошибка: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/HP/IdeaProjects/JDBC_TEST/test_db.mv.db [2.1.214/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/HP/IdeaProjects/JDBC_TEST/test_db.mv.db [2.1.214/7]" [50000-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:554)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	... 20 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/HP/IdeaProjects/JDBC_TEST/test_db.mv.db [2.1.214/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:1004)
+	at org.h2.mvstore.FileStore.open(FileStore.java:178)
+	at org.h2.mvstore.FileStore.open(FileStore.java:128)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:452)
+	... 14 more
+2023-05-11 14:14:13 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Столбец "price" не найден
+Column "price" not found [42122-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.jdbc.JdbcResultSet.getColumnIndex(JdbcResultSet.java:3492)
+	at org.h2.jdbc.JdbcResultSet.getBigDecimal(JdbcResultSet.java:455)
+	at DbServises.DatabaseQueryService.findProjectPrice(DatabaseQueryService.java:80)
+	at Main.main(Main.java:18)
+2023-05-11 15:53:07 database: flush
+org.h2.message.DbException: Внутренняя ошибка: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/HP/IdeaProjects/JDBC_TEST/test_db.mv.db [2.1.214/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/HP/IdeaProjects/JDBC_TEST/test_db.mv.db [2.1.214/7]" [50000-214]
+	at org.h2.message.DbException.get(DbException.java:212)
+	at org.h2.message.DbException.convert(DbException.java:395)
+	at org.h2.mvstore.db.Store.lambda$new$0(Store.java:125)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:3318)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:593)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:469)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:4082)
+	at org.h2.mvstore.db.Store.<init>(Store.java:136)
+	at org.h2.engine.Database.<init>(Database.java:324)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:122)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:252)
+	at DataBase.DataBase.<init>(DataBase.java:12)
+	at DataBase.DataBase.<clinit>(DataBase.java:6)
+	at Main.main(Main.java:10)
+Caused by: org.h2.jdbc.JdbcSQLNonTransientException: Внутренняя ошибка: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/HP/IdeaProjects/JDBC_TEST/test_db.mv.db [2.1.214/7]"
+General error: "org.h2.mvstore.MVStoreException: The file is locked: C:/Users/HP/IdeaProjects/JDBC_TEST/test_db.mv.db [2.1.214/7]" [50000-214]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:554)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)
+	... 20 more
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/HP/IdeaProjects/JDBC_TEST/test_db.mv.db [2.1.214/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:1004)
+	at org.h2.mvstore.FileStore.open(FileStore.java:178)
+	at org.h2.mvstore.FileStore.open(FileStore.java:128)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:452)
+	... 14 more
